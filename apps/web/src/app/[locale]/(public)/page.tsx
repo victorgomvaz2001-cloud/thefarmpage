@@ -2,6 +2,15 @@ export const dynamic = 'force-dynamic'
 
 import { getTranslations, getLocale } from 'next-intl/server'
 import SEOHead from '@/components/SEOHead'
+import HeroSection from '@/components/home/HeroSection'
+import AboutSection from '@/components/home/AboutSection'
+import EventsSection from '@/components/home/EventsSection'
+import GetInviteSection from '@/components/home/GetInviteSection'
+import ClubRulesSection from '@/components/home/ClubRulesSection'
+import InviteProcessSection from '@/components/home/InviteProcessSection'
+import RequirementsSection from '@/components/home/RequirementsSection'
+import FAQSection from '@/components/home/FAQSection'
+import FinalCTASection from '@/components/home/FinalCTASection'
 
 export default async function HomePage() {
   const locale = await getLocale()
@@ -9,10 +18,17 @@ export default async function HomePage() {
   const seoRoute = locale === 'es' ? '/' : `/${locale}`
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-16">
+    <>
       <SEOHead route={seoRoute} fallback={{ title: t('title') }} />
-      <h1 className="text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h1>
-      <p className="mt-4 text-lg text-gray-600">{t('description')}</p>
-    </div>
+      <HeroSection />
+      <AboutSection />
+      <EventsSection />
+      <GetInviteSection />
+      <ClubRulesSection />
+      <InviteProcessSection />
+      <RequirementsSection />
+      <FAQSection />
+      <FinalCTASection />
+    </>
   )
 }

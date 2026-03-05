@@ -1,4 +1,4 @@
-# Falcanna US — Monorepo
+# The Farm — Monorepo
 
 TypeScript monorepo powered by **Turborepo** + **pnpm workspaces**.
 
@@ -20,7 +20,7 @@ TypeScript monorepo powered by **Turborepo** + **pnpm workspaces**.
 ## Structure
 
 ```
-falcanna-us/
+thefarm/
 ├── apps/
 │   ├── web/          # Next.js 15 — public site + admin
 │   └── api/          # Express.js REST API

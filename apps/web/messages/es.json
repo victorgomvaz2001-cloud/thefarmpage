@@ -1,9 +1,211 @@
 {
   "home": {
-    "title": "Bienvenido a Falcanna",
-    "description": "Genética de cannabis premium en Washington y Oklahoma."
+    "title": "The Farm Social Club",
+    "hero": {
+      "label": "Club Social Cannábico · Cataluña",
+      "headline": "Bienvenido a The Farm",
+      "subheadline": "Un espacio exclusivo para socios donde la cultura cannábica, la comunidad y los mejores comestibles artesanales se encuentran.",
+      "cta": "Consigue tu invitación"
+    },
+    "about": {
+      "label": "Quiénes somos",
+      "title": "Más que un club, una comunidad",
+      "description": "The Farm Social Club nació en Cataluña con una idea clara: crear un espacio de calidad para personas que valoran el cannabis como parte de su cultura y estilo de vida. Aquí encontrarás un ambiente tranquilo, respetuoso y lleno de buena gente.",
+      "description2": "Nos enorgullece acoger tanto a turistas que quieren vivir la auténtica experiencia catalana como a estudiantes universitarios de la zona que buscan un lugar de referencia.",
+      "edibles": {
+        "title": "Comestibles artesanales",
+        "text": "Elaboramos nuestros propios comestibles de forma completamente casera. Brownies, galletas, gominolas y mucho más, todo hecho a mano con ingredientes de primera calidad."
+      },
+      "cultivation": {
+        "title": "Cultivo autóctono",
+        "text": "Trabajamos con variedades cultivadas en Cataluña siguiendo prácticas respetuosas con el entorno. Calidad garantizada, precios asequibles."
+      },
+      "community": {
+        "title": "Comunidad activa",
+        "text": "Desde juegos de mesa y videoconsolas hasta catas, torneos de póker y el clásico Domingo del Socio. Siempre hay algo que hacer en The Farm."
+      }
+    },
+    "events": {
+      "label": "Lo que nos hace especiales",
+      "title": "Eventos y beneficios para socios",
+      "description": "En The Farm la experiencia va mucho más allá del producto. Organizamos eventos propios y ofrecemos beneficios exclusivos para nuestros socios.",
+      "sundayBadge": "Cada domingo",
+      "edibleTasting": {
+        "title": "Cata de Comestibles",
+        "text": "Descubre y valora nuestras nuevas creaciones artesanales. Una experiencia sensorial única donde los socios prueban y opinan sobre las últimas recetas."
+      },
+      "poker": {
+        "title": "Noches de Póker",
+        "text": "Torneos de póker con ambiente relajado y buena compañía. Una noche perfecta para desconectar y pasar un buen rato con los socios."
+      },
+      "playstation": {
+        "title": "Torneos PlayStation",
+        "text": "Competiciones de videojuegos abiertas a todos los socios. Ven a demostrar lo que vales en FIFA, NBA 2K y muchos más títulos."
+      },
+      "memberSunday": {
+        "title": "Domingo del Socio",
+        "text": "Cada domingo es el día de los socios. Descuento especial en todos los productos seleccionados y el ambiente más especial de la semana."
+      }
+    },
+    "getInvite": {
+      "label": "Únete al club",
+      "title": "El acceso es por invitación",
+      "description": "The Farm es un club privado. Para poder visitarnos necesitas una invitación. El proceso es sencillo y el equipo te acompañará en cada paso.",
+      "note": "El tiempo de respuesta habitual es de 24 a 48 horas laborables.",
+      "cta": "Solicitar invitación"
+    },
+    "clubRules": {
+      "label": "Cómo nos comportamos",
+      "title": "Normas Internas",
+      "intro": "The Farm Social Club es un club privado creado para compartir un espacio de paz y tranquilidad. Este proyecto existe gracias al compromiso de todos los socios. Cuidarlo es una responsabilidad compartida.",
+      "closing": "The Farm es cosa de todos. Cuidemos nuestra comunidad y hagámosla crecer. Si tienes ideas o sugerencias, estaremos encantados de valorarlas.",
+      "access": {
+        "title": "Acceso",
+        "r1": "El acceso está estrictamente limitado a socios registrados mayores de 18 años.",
+        "r2": "No se permite la entrada a personas no socias."
+      },
+      "consumption": {
+        "title": "Consumo y funcionamiento",
+        "r1": "El consumo está limitado exclusivamente al espacio privado del club.",
+        "r2": "Está totalmente prohibido fumar o consumir en la calle o en los alrededores del local.",
+        "r3": "No se permite introducir productos del exterior, ya que el club se sostiene gracias a las aportaciones de sus socios.",
+        "r4": "No se permite la venta ni el intercambio entre socios."
+      },
+      "coexistence": {
+        "title": "Convivencia y comunidad",
+        "r1": "Este es un espacio de paz, respeto y tranquilidad.",
+        "r2": "No se tolerarán malas actitudes ni faltas de respeto hacia los socios, los trabajadores ni el local.",
+        "r3": "Mantener el local limpio y cuidar las instalaciones es responsabilidad de todos.",
+        "r4": "Se requiere mantener una higiene personal adecuada por respeto al resto de la comunidad.",
+        "r5": "Cada socio representa al club; el comportamiento individual afecta a toda la comunidad."
+      },
+      "activities": {
+        "title": "Actividades del club",
+        "r1": "Organizamos actividades para los socios: catas, actividades sociales e iniciativas culturales.",
+        "r2": "El objetivo es fortalecer la comunidad, el conocimiento y la convivencia."
+      },
+      "responsibility": {
+        "title": "Responsabilidad",
+        "r1": "Cada socio es responsable de su comportamiento dentro y fuera del club.",
+        "r2": "Se exige discreción y respeto para proteger a la asociación y a sus miembros."
+      },
+      "breach": {
+        "title": "Incumplimiento",
+        "r1": "El incumplimiento de estas normas puede conllevar una advertencia o la expulsión.",
+        "r2": "El club se reserva el derecho de admisión y permanencia."
+      }
+    },
+    "inviteProcess": {
+      "label": "Cómo funciona",
+      "title": "El proceso paso a paso",
+      "step1": {
+        "title": "Solicita el acceso",
+        "text": "Rellena el formulario de contacto con tus datos básicos. No hace falta nada más para empezar."
+      },
+      "step2": {
+        "title": "Revisamos tu solicitud",
+        "text": "El equipo de The Farm revisa tu solicitud y se pone en contacto contigo en un plazo de 24 a 48 horas."
+      },
+      "step3": {
+        "title": "Recibes tu invitación",
+        "text": "Si todo es correcto, recibirás tu invitación personalizada. Guárdala bien, la necesitarás en tu primera visita."
+      },
+      "step4": {
+        "title": "Bienvenido a The Farm",
+        "text": "Preséntate en el club con tu invitación e identificación. A partir de aquí, ya eres parte de la familia."
+      }
+    },
+    "requirements": {
+      "label": "Antes de venir",
+      "title": "Requisitos de acceso",
+      "studentBadge": "Descuento activo",
+      "age": {
+        "title": "Mayoría de edad",
+        "text": "Es imprescindible tener 18 años cumplidos. Se comprobará la identificación en la entrada en cada visita."
+      },
+      "membership": {
+        "title": "Cuota de socio",
+        "text": "La membresía es anual. Incluye acceso al club, eventos exclusivos, descuentos y todos los beneficios de socio."
+      },
+      "student": {
+        "title": "Descuento universitario",
+        "text": "Si eres estudiante universitario, tienes un descuento aplicado en todos los productos. Solo necesitas acreditar tu condición de estudiante."
+      },
+      "legal": {
+        "title": "Documentación",
+        "text": "Es obligatorio presentar DNI, NIE o pasaporte en vigor en cada visita. Sin documentación no hay acceso."
+      }
+    },
+    "faq": {
+      "label": "¿Tienes dudas?",
+      "title": "Preguntas frecuentes",
+      "invitation": {
+        "question": "¿Cómo consigo una invitación?",
+        "answer": "Puedes solicitar una invitación a través del formulario de contacto de esta página. El equipo la revisará y te responderá en un plazo de 24 a 48 horas laborables."
+      },
+      "membership": {
+        "question": "¿Es obligatorio hacerse socio?",
+        "answer": "Sí. The Farm es un club privado y el acceso está restringido a socios o invitados de socios. La cuota anual cubre el acceso al club y a todos los beneficios exclusivos."
+      },
+      "guest": {
+        "question": "¿Puedo traer un acompañante?",
+        "answer": "Sí, los socios pueden traer un invitado siempre que lo registren previamente. El socio es responsable de la conducta de su acompañante durante la visita."
+      },
+      "documents": {
+        "question": "¿Qué documentos necesito?",
+        "answer": "Es suficiente con tu DNI, NIE o pasaporte en vigor. Debe acreditar que eres mayor de 18 años. No se admiten documentos caducados."
+      },
+      "hours": {
+        "question": "¿Cuál es el horario del club?",
+        "answer": "Estamos abiertos de martes a domingo. Consulta el horario actualizado en la sección de contacto o escríbenos directamente."
+      },
+      "edibles": {
+        "question": "¿Qué son los comestibles artesanales?",
+        "answer": "Son productos de elaboración propia: brownies, galletas, gominolas y otras recetas hechas a mano con ingredientes de calidad. Los socios pueden probarlos en las catas periódicas que organizamos."
+      },
+      "student": {
+        "question": "¿Cómo funciona el descuento para estudiantes?",
+        "answer": "Si eres estudiante universitario, tienes un descuento en todos los productos del club. Solo tienes que acreditar tu condición de estudiante la primera vez que lo solicites."
+      }
+    },
+    "finalCta": {
+      "title": "¿Listo para unirte a The Farm?",
+      "description": "Forma parte de una comunidad única en Cataluña. Comestibles artesanales, cultivo de calidad, eventos exclusivos y una comunidad que te recibirá con los brazos abiertos.",
+      "cta": "Consigue tu invitación"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Ponte en contacto con nosotros."
   },
   "nav": {
-    "home": "Inicio"
+    "home": "Inicio",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "info": {
+      "location": "Ubicación",
+      "hours": "Horario",
+      "hoursValue": "Lunes a domingo"
+    },
+    "sections": {
+      "title": "Secciones",
+      "home": "Inicio",
+      "about": "Sobre el Club",
+      "invite": "Consigue tu invitación",
+      "contact": "Contacto"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Política de privacidad",
+      "terms": "Términos y condiciones",
+      "cookies": "Política de cookies"
+    },
+    "social": {
+      "title": "Síguenos",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp"
+    },
+    "copyright": "© {year} The Farm Social Club. Todos los derechos reservados."
   }
 }

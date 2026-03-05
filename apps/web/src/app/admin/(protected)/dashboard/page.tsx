@@ -9,7 +9,7 @@ export default function DashboardPage() {
   return (
     <div>
       <h1 className="mb-2 text-2xl font-bold text-gray-900">Admin Dashboard</h1>
-      <p className="mb-8 text-gray-500">Welcome to the Falcanna admin panel.</p>
+      <p className="mb-8 text-gray-500">Welcome to the The Farm admin panel.</p>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
         {cards.map((card) => (
           <a

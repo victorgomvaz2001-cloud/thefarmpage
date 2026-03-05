@@ -1,9 +1,211 @@
 {
   "home": {
-    "title": "Welcome to Falcanna",
-    "description": "Premium cannabis genetics across Washington and Oklahoma."
+    "title": "The Farm Social Club",
+    "hero": {
+      "label": "Cannabis Social Club · Catalonia",
+      "headline": "Welcome to The Farm",
+      "subheadline": "An exclusive members-only space where cannabis culture, community, and the finest handmade edibles come together.",
+      "cta": "Get Your Invite"
+    },
+    "about": {
+      "label": "Who we are",
+      "title": "More than a club, a community",
+      "description": "The Farm Social Club was born in Catalonia with a clear vision: to create a quality space for people who value cannabis as part of their culture and lifestyle. Here you'll find a calm, respectful environment full of great people.",
+      "description2": "We're proud to welcome both tourists looking to experience authentic Catalan culture and local university students who want a place they can call their own.",
+      "edibles": {
+        "title": "Artisan Edibles",
+        "text": "We craft our own edibles entirely in-house. Brownies, cookies, gummies and more — all handmade with premium quality ingredients."
+      },
+      "cultivation": {
+        "title": "Local Cultivation",
+        "text": "We work with varieties grown in Catalonia following environmentally respectful practices. Guaranteed quality at affordable prices."
+      },
+      "community": {
+        "title": "Active Community",
+        "text": "From board games and consoles to edible tastings, poker tournaments and the iconic Member Sunday. There's always something happening at The Farm."
+      }
+    },
+    "events": {
+      "label": "What makes us special",
+      "title": "Events & Member Benefits",
+      "description": "At The Farm, the experience goes far beyond the product. We run our own events and offer exclusive benefits for our members.",
+      "sundayBadge": "Every Sunday",
+      "edibleTasting": {
+        "title": "Edible Tasting",
+        "text": "Discover and rate our latest handmade creations. A unique sensory experience where members try and give feedback on our newest recipes."
+      },
+      "poker": {
+        "title": "Poker Nights",
+        "text": "Relaxed poker tournaments with great company. A perfect evening to unwind and have a good time with fellow members."
+      },
+      "playstation": {
+        "title": "PlayStation Tournaments",
+        "text": "Gaming competitions open to all members. Come show your skills in FIFA, NBA 2K and many more titles."
+      },
+      "memberSunday": {
+        "title": "Member Sunday",
+        "text": "Every Sunday belongs to our members. Extra discounts on all selected products and the best atmosphere of the week."
+      }
+    },
+    "getInvite": {
+      "label": "Join the club",
+      "title": "Access is by invitation only",
+      "description": "The Farm is a private club. To visit us, you'll need an invitation. The process is simple and our team will guide you every step of the way.",
+      "note": "Usual response time is 24 to 48 business hours.",
+      "cta": "Request an Invitation"
+    },
+    "clubRules": {
+      "label": "How we behave",
+      "title": "Internal Rules",
+      "intro": "The Farm Social Club is a private members club created to share a peaceful and welcoming space. This project exists thanks to the commitment of all its members. Taking care of it is a shared responsibility.",
+      "closing": "The Farm belongs to all of us. Let's take care of our community and help it grow. If you have ideas or suggestions, we'll be happy to consider them.",
+      "access": {
+        "title": "Access",
+        "r1": "Access is strictly limited to registered members aged 18 and over.",
+        "r2": "Entry is not permitted to non-members."
+      },
+      "consumption": {
+        "title": "Consumption & operations",
+        "r1": "Consumption is exclusively limited to the club's private space.",
+        "r2": "Smoking or consuming on the street or around the premises is strictly prohibited.",
+        "r3": "Bringing outside products is not permitted, as the club is sustained by its members' contributions.",
+        "r4": "Selling or exchanging products between members is not allowed."
+      },
+      "coexistence": {
+        "title": "Coexistence & community",
+        "r1": "This is a space of peace, respect and tranquility.",
+        "r2": "Poor attitudes or disrespect towards members, staff or the premises will not be tolerated.",
+        "r3": "Keeping the space clean and taking care of the facilities is everyone's responsibility.",
+        "r4": "Adequate personal hygiene is required out of respect for the rest of the community.",
+        "r5": "Each member represents the club; individual behaviour affects the whole community."
+      },
+      "activities": {
+        "title": "Club activities",
+        "r1": "We organise activities for members: tastings, social events and cultural initiatives.",
+        "r2": "The goal is to strengthen community, knowledge and coexistence."
+      },
+      "responsibility": {
+        "title": "Responsibility",
+        "r1": "Each member is responsible for their behaviour inside and outside the club.",
+        "r2": "Discretion and respect are required to protect the association and its members."
+      },
+      "breach": {
+        "title": "Non-compliance",
+        "r1": "Failure to comply with these rules may result in a warning or expulsion.",
+        "r2": "The club reserves the right of admission and continued membership."
+      }
+    },
+    "inviteProcess": {
+      "label": "How it works",
+      "title": "The process step by step",
+      "step1": {
+        "title": "Request Access",
+        "text": "Fill out the contact form with your basic details. That's all you need to get started."
+      },
+      "step2": {
+        "title": "We Review Your Request",
+        "text": "The Farm team reviews your request and gets back to you within 24 to 48 business hours."
+      },
+      "step3": {
+        "title": "Receive Your Invitation",
+        "text": "If everything checks out, you'll receive your personal invitation. Keep it safe — you'll need it on your first visit."
+      },
+      "step4": {
+        "title": "Welcome to The Farm",
+        "text": "Show up at the club with your invitation and ID. From this point on, you're part of the family."
+      }
+    },
+    "requirements": {
+      "label": "Before you come",
+      "title": "Access Requirements",
+      "studentBadge": "Discount active",
+      "age": {
+        "title": "Legal Age",
+        "text": "You must be at least 18 years old. ID will be checked at the entrance on every visit."
+      },
+      "membership": {
+        "title": "Membership Fee",
+        "text": "Membership is annual. It includes club access, exclusive events, discounts and all member benefits."
+      },
+      "student": {
+        "title": "University Discount",
+        "text": "If you're a university student, you get a discount on all club products. Just verify your student status the first time you request it."
+      },
+      "legal": {
+        "title": "Documentation",
+        "text": "A valid national ID, NIE or passport is required on every visit. No documentation, no access."
+      }
+    },
+    "faq": {
+      "label": "Got questions?",
+      "title": "Frequently Asked Questions",
+      "invitation": {
+        "question": "How do I get an invitation?",
+        "answer": "You can request an invitation through the contact form on this page. The team will review it and get back to you within 24 to 48 business hours."
+      },
+      "membership": {
+        "question": "Is membership required?",
+        "answer": "Yes. The Farm is a private club and access is restricted to members or guests of members. The annual fee covers club access and all exclusive benefits."
+      },
+      "guest": {
+        "question": "Can I bring a guest?",
+        "answer": "Yes, members can bring one guest as long as they register them in advance. The member is responsible for their guest's conduct during the visit."
+      },
+      "documents": {
+        "question": "What documents do I need?",
+        "answer": "A valid national ID, NIE or passport is sufficient. It must confirm you are 18 or older. Expired documents are not accepted."
+      },
+      "hours": {
+        "question": "What are the club's opening hours?",
+        "answer": "We're open Tuesday through Sunday. Check the updated schedule in the contact section or reach out to us directly."
+      },
+      "edibles": {
+        "question": "What are artisan edibles?",
+        "answer": "They are our own in-house creations: brownies, cookies, gummies and other recipes handmade with quality ingredients. Members can try them at our periodic tasting events."
+      },
+      "student": {
+        "question": "How does the student discount work?",
+        "answer": "If you're a university student, you get a discount on all club products. You just need to verify your student status the first time you request it."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to join The Farm?",
+      "description": "Become part of a unique community in Catalonia. Artisan edibles, quality cultivation, exclusive events and a community that will welcome you with open arms.",
+      "cta": "Get Your Invite"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with us."
   },
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "footer": {
+    "info": {
+      "location": "Location",
+      "hours": "Hours",
+      "hoursValue": "Monday to Sunday"
+    },
+    "sections": {
+      "title": "Sections",
+      "home": "Home",
+      "about": "About the Club",
+      "invite": "Get Your Invite",
+      "contact": "Contact"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "cookies": "Cookie Policy"
+    },
+    "social": {
+      "title": "Follow Us",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp"
+    },
+    "copyright": "© {year} The Farm Social Club. All rights reserved."
   }
 }
