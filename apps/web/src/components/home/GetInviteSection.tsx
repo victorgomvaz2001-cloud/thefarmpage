@@ -4,7 +4,7 @@ export default function GetInviteSection() {
   const t = useTranslations('home.getInvite')
 
   return (
-    <section id="invite" className="bg-[#4a5731] py-24 px-4">
+    <section id="invite" className="bg-black py-24 px-4">
       <div className="mx-auto max-w-2xl text-center">
         <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#a8bc7a]">
           {t('label')}
