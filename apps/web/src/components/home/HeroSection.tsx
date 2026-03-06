@@ -18,7 +18,7 @@ export default function HeroSection() {
         <span className="inline-block mb-6 text-xs font-semibold uppercase tracking-[0.4em] text-[#a8bc7a]">
           {t('label')}
         </span>
-        <h1 className="text-5xl font-bold tracking-tight text-white md:text-7xl leading-tight">
+        <h1 className="font-storica text-5xl font-bold tracking-tight text-white md:text-7xl leading-tight">
           {t('headline')}
         </h1>
         <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">{t('subheadline')}</p>

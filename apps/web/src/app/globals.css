@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.font-storica {
+  font-family: var(--font-storica), serif;
+}
+
 /* ── TipTap / ProseMirror editor styles ───────────────────────────────────── */
 .ProseMirror { outline: none; }
 .ProseMirror > * + * { margin-top: 0.75rem; }

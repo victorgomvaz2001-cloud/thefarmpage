@@ -14,7 +14,7 @@ export default function AboutSection() {
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#4a5731]">
               {t('label')}
             </span>
-            <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
+            <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">{t('description')}</p>
             <p className="mt-4 text-gray-500">{t('description2')}</p>
           </div>
@@ -31,7 +31,7 @@ export default function AboutSection() {
         <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {PILLARS.map((key) => (
             <div key={key} className="border-t-2 border-[#4a5731] pt-6">
-              <h3 className="text-lg font-bold text-gray-900">{t(`${key}.title`)}</h3>
+              <h3 className="font-storica text-lg font-bold text-gray-900">{t(`${key}.title`)}</h3>
               <p className="mt-3 text-sm text-gray-500 leading-relaxed">{t(`${key}.text`)}</p>
             </div>
           ))}

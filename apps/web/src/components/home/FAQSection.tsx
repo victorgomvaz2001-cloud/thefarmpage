@@ -54,7 +54,7 @@ export default function FAQSection() {
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#4a5731]">
             {t('label')}
           </span>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
+          <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
         </div>
         <dl className="mt-16 space-y-3">
           {FAQS.map((key) => (

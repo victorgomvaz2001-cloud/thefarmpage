@@ -9,7 +9,7 @@ export default function GetInviteSection() {
         <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#a8bc7a]">
           {t('label')}
         </span>
-        <h2 className="mt-3 text-4xl font-bold tracking-tight text-white">{t('title')}</h2>
+        <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-white">{t('title')}</h2>
         <p className="mt-6 text-lg text-white/80 leading-relaxed">{t('description')}</p>
         <p className="mt-4 text-sm text-white/60">{t('note')}</p>
         <a

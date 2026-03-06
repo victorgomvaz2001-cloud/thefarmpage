@@ -14,7 +14,7 @@ export default function FinalCTASection() {
       />
       <div className="absolute inset-0 bg-[#1a2010]/80" />
       <div className="relative z-10 mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">{t('title')}</h2>
+        <h2 className="font-storica text-4xl font-bold tracking-tight text-white md:text-5xl">{t('title')}</h2>
         <p className="mt-6 text-lg text-white/80 leading-relaxed">{t('description')}</p>
         <a
           href="/contact"

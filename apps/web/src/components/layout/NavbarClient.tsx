@@ -20,7 +20,7 @@ export default function NavbarClient({ home, contact }: Props) {
         <div className="flex items-center">
           <Link
             href="/"
-            className="text-xs font-semibold uppercase tracking-[0.3em] text-white"
+            className="font-storica text-xs font-semibold uppercase tracking-[0.3em] text-white"
           >
             THE FARM
           </Link>
@@ -30,7 +30,7 @@ export default function NavbarClient({ home, contact }: Props) {
         <div className="flex flex-1 items-center justify-center gap-10">
           <Link
             href="/"
-            className="hidden md:block text-sm font-medium text-white hover:text-gray-100"
+            className="font-storica hidden md:block text-sm font-medium text-white hover:text-gray-100"
           >
             {home}
           </Link>
@@ -40,7 +40,7 @@ export default function NavbarClient({ home, contact }: Props) {
 
           <Link
             href="/contact"
-            className="hidden md:block text-sm font-medium text-white hover:text-gray-100"
+            className="font-storica hidden md:block text-sm font-medium text-white hover:text-gray-100"
           >
             {contact}
           </Link>
@@ -98,18 +98,21 @@ export default function NavbarClient({ home, contact }: Props) {
         className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out ${
           open ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
         }`}
+        style={{ backgroundColor: '#a8bc7a' }}
       >
         <div className="flex flex-col items-center gap-5 pt-10 pb-6">
           <Link
             href="/"
-            className="text-sm font-medium text-white hover:text-gray-100"
+            className="font-storica text-sm font-medium hover:opacity-80"
+            style={{ color: '#4a5731' }}
             onClick={() => setOpen(false)}
           >
             {home}
           </Link>
           <Link
             href="/contact"
-            className="text-sm font-medium text-white hover:text-gray-100"
+            className="font-storica text-sm font-medium hover:opacity-80"
+            style={{ color: '#4a5731' }}
             onClick={() => setOpen(false)}
           >
             {contact}

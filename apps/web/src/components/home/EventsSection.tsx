@@ -18,7 +18,7 @@ export default function EventsSection() {
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#4a5731]">
             {t('label')}
           </span>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
+          <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
           <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">{t('description')}</p>
         </div>
 
@@ -34,7 +34,7 @@ export default function EventsSection() {
                 />
               </div>
               <div className="p-5">
-                <h3 className="font-bold text-gray-900">{t(`${key}.title`)}</h3>
+                <h3 className="font-storica font-bold text-gray-900">{t(`${key}.title`)}</h3>
                 <p className="mt-2 text-sm text-gray-500 leading-relaxed">{t(`${key}.text`)}</p>
                 {key === 'memberSunday' && (
                   <span className="mt-3 inline-block bg-[#4a5731] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">

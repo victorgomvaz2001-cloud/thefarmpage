@@ -12,7 +12,7 @@ export default function InviteProcessSection() {
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#4a5731]">
             {t('label')}
           </span>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
+          <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
         </div>
         <ol className="mt-16 space-y-10">
           {STEPS.map((key, i) => (
@@ -21,7 +21,7 @@ export default function InviteProcessSection() {
                 {i + 1}
               </span>
               <div className="pt-2">
-                <h3 className="font-bold text-gray-900">{t(`${key}.title`)}</h3>
+                <h3 className="font-storica font-bold text-gray-900">{t(`${key}.title`)}</h3>
                 <p className="mt-1 text-sm text-gray-500 leading-relaxed">{t(`${key}.text`)}</p>
               </div>
             </li>

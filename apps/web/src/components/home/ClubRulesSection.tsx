@@ -19,7 +19,7 @@ export default function ClubRulesSection() {
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#4a5731]">
             {t('label')}
           </span>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
+          <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
           <p className="mt-6 text-gray-500 max-w-2xl mx-auto leading-relaxed">{t('intro')}</p>
         </div>
 
@@ -28,7 +28,7 @@ export default function ClubRulesSection() {
             <div key={key} className="bg-white p-7">
               <div className="flex items-center gap-3 mb-5">
                 <span className="text-xs font-bold text-[#4a5731]">{String(i + 1).padStart(2, '0')}</span>
-                <h3 className="font-bold text-gray-900 uppercase tracking-wide text-sm">
+                <h3 className="font-storica font-bold text-gray-900 uppercase tracking-wide text-sm">
                   {t(`${key}.title`)}
                 </h3>
               </div>
