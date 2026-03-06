@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 export default function HeroSection() {
@@ -6,12 +5,13 @@ export default function HeroSection() {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center">
-      <Image
-        src="https://picsum.photos/seed/thefarm-hero/1920/1080"
-        alt=""
-        fill
-        className="object-cover"
-        priority
+      <video
+        src="https://cavidasthefarm.s3.eu-north-1.amazonaws.com/hero+horizontal.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-[#1a2010]/75" />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">

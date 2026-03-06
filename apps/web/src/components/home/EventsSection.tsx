@@ -1,12 +1,15 @@
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 import { useTranslations } from 'next-intl'
+import ediblesImg from '@/assets/images/edibles.webp'
+import pokerImg from '@/assets/images/poker.webp'
+import memberImg from '@/assets/images/member.webp'
 
-const EVENTS = [
-  { key: 'edibleTasting', seed: 'thefarm-edibles' },
-  { key: 'poker', seed: 'thefarm-poker' },
-  { key: 'playstation', seed: 'thefarm-gaming' },
-  { key: 'memberSunday', seed: 'thefarm-sunday' },
-] as const
+const EVENTS: { key: string; src: StaticImageData | string }[] = [
+  { key: 'edibleTasting', src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/edibles.webp' },
+  { key: 'poker',         src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/poker.webp' },
+  { key: 'playstation',   src: 'https://picsum.photos/seed/thefarm-gaming/600/400' },
+  { key: 'memberSunday',  src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/member.webp' },
+]
 
 export default function EventsSection() {
   const t = useTranslations('home.events')
@@ -23,24 +26,24 @@ export default function EventsSection() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {EVENTS.map(({ key, seed }) => (
-            <div key={key} className="bg-white overflow-hidden group">
+          {EVENTS.map(({ key, src }) => (
+            <div key={key} className="bg-white overflow-hidden rounded-2xl shadow-md group">
               <div className="relative h-52 overflow-hidden">
                 <Image
-                  src={`https://picsum.photos/seed/${seed}/600/400`}
+                  src={src}
                   alt={t(`${key}.title`)}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-              </div>
-              <div className="p-5">
-                <h3 className="font-storica font-bold text-gray-900">{t(`${key}.title`)}</h3>
-                <p className="mt-2 text-sm text-gray-500 leading-relaxed">{t(`${key}.text`)}</p>
                 {key === 'memberSunday' && (
-                  <span className="mt-3 inline-block bg-[#4a5731] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                  <span className="absolute top-3 left-3 z-10 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#4a5731] rounded-full">
                     {t('sundayBadge')}
                   </span>
                 )}
+              </div>
+              <div className="p-5 shadow-[inset_0_6px_10px_-4px_rgba(0,0,0,0.15)]">
+                <h3 className="font-storica font-bold text-gray-900">{t(`${key}.title`)}</h3>
+                <p className="mt-2 text-sm text-gray-500 leading-relaxed">{t(`${key}.text`)}</p>
               </div>
             </div>
           ))}
