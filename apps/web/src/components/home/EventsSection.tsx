@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
@@ -11,9 +11,38 @@ const EVENTS = [
   { key: 'memberSunday',  src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/member.webp' },
 ] as const
 
+// Cycle: null → 0 → 1 → 2 → 3 → null → ...
+const CYCLE = [null, 0, 1, 2, 3] as const
+type CycleStep = typeof CYCLE[number]
+
 export default function EventsSection() {
   const t = useTranslations('home.events')
   const [active, setActive] = useState<number | null>(null)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const stepRef = useRef(0)
+
+  const startCycle = (fromStep = 0) => {
+    if (timerRef.current) clearTimeout(timerRef.current)
+    stepRef.current = fromStep
+    const tick = () => {
+      stepRef.current = (stepRef.current + 1) % CYCLE.length
+      setActive(CYCLE[stepRef.current] as CycleStep)
+      timerRef.current = setTimeout(tick, 10000)
+    }
+    timerRef.current = setTimeout(tick, 10000)
+  }
+
+  useEffect(() => {
+    startCycle(0)
+    return () => { if (timerRef.current) clearTimeout(timerRef.current) }
+  }, [])
+
+  const handleClick = (i: number) => {
+    const next = i === active ? null : i
+    setActive(next)
+    const step = next === null ? 0 : next + 1
+    startCycle(step)
+  }
 
   const gridCols = active === null
     ? '4fr 1fr 1fr 1fr 1fr'
@@ -68,7 +97,7 @@ export default function EventsSection() {
             <div
               key={key}
               className="relative overflow-hidden cursor-pointer group"
-              onClick={() => setActive(isActive ? null : i)}
+              onClick={() => handleClick(i)}
             >
               <Image
                 src={src}
@@ -116,7 +145,7 @@ export default function EventsSection() {
             <div key={key}>
               <button
                 className="relative w-full h-16 flex items-center px-6 overflow-hidden"
-                onClick={() => setActive(isActive ? null : i)}
+                onClick={() => handleClick(i)}
               >
                 <Image src={src} alt="" fill sizes="100vw" className="object-cover brightness-[0.35]" />
                 <span className="relative z-10 font-storica font-bold text-white">{t(`${key}.title`)}</span>
