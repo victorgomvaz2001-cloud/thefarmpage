@@ -20,7 +20,7 @@ export class SitemapService {
 
     const entries = routes.map((r) => ({
       loc: `${siteUrl}${r.route}`,
-      lastmod: new Date(r.updatedAt).toISOString().split('T')[0],
+      lastmod: new Date(r.updatedAt).toISOString().split('T')[0]!,
     }))
 
     const xml = buildXml(entries)
