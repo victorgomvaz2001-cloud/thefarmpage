@@ -5,10 +5,8 @@ import './globals.css'
 
 const storica = localFont({
   src: [
-    { path: '../fonts/Storica-Light.ttf',   weight: '300', style: 'normal' },
-    { path: '../fonts/Storica-Regular.ttf', weight: '400', style: 'normal' },
-    { path: '../fonts/Storica-Medium.ttf',  weight: '500', style: 'normal' },
-    { path: '../fonts/Storica-Bold.ttf',    weight: '700', style: 'normal' },
+    { path: '../fonts/Storica-Medium.woff2', weight: '500', style: 'normal' },
+    { path: '../fonts/Storica-Bold.woff2',   weight: '700', style: 'normal' },
   ],
   variable: '--font-storica',
   display: 'swap',

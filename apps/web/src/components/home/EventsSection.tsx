@@ -1,10 +1,7 @@
-import Image, { type StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import ediblesImg from '@/assets/images/edibles.webp'
-import pokerImg from '@/assets/images/poker.webp'
-import memberImg from '@/assets/images/member.webp'
 
-const EVENTS: { key: string; src: StaticImageData | string }[] = [
+const EVENTS: { key: string; src: string }[] = [
   { key: 'edibleTasting', src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/edibles.webp' },
   { key: 'poker',         src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/poker.webp' },
   { key: 'playstation',   src: 'https://picsum.photos/seed/thefarm-gaming/600/400' },
@@ -33,6 +30,7 @@ export default function EventsSection() {
                   src={src}
                   alt={t(`${key}.title`)}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 {key === 'memberSunday' && (

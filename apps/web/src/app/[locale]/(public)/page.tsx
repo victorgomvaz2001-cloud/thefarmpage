@@ -1,16 +1,18 @@
 export const dynamic = 'force-dynamic'
 
+import lazy from 'next/dynamic'
 import { getTranslations, getLocale } from 'next-intl/server'
 import SEOHead from '@/components/SEOHead'
 import HeroSection from '@/components/home/HeroSection'
-import AboutSection from '@/components/home/AboutSection'
-import EventsSection from '@/components/home/EventsSection'
-import GetInviteSection from '@/components/home/GetInviteSection'
-import ClubRulesSection from '@/components/home/ClubRulesSection'
-import InviteProcessSection from '@/components/home/InviteProcessSection'
-import RequirementsSection from '@/components/home/RequirementsSection'
-import FAQSection from '@/components/home/FAQSection'
-import FinalCTASection from '@/components/home/FinalCTASection'
+
+const AboutSection         = lazy(() => import('@/components/home/AboutSection'))
+const EventsSection        = lazy(() => import('@/components/home/EventsSection'))
+const GetInviteSection     = lazy(() => import('@/components/home/GetInviteSection'))
+const ClubRulesSection     = lazy(() => import('@/components/home/ClubRulesSection'))
+const InviteProcessSection = lazy(() => import('@/components/home/InviteProcessSection'))
+const RequirementsSection  = lazy(() => import('@/components/home/RequirementsSection'))
+const FAQSection           = lazy(() => import('@/components/home/FAQSection'))
+const FinalCTASection      = lazy(() => import('@/components/home/FinalCTASection'))
 
 export default async function HomePage() {
   const locale = await getLocale()

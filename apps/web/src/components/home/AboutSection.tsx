@@ -23,6 +23,7 @@ export default function AboutSection() {
               src="https://picsum.photos/seed/thefarm-about/800/600"
               alt="The Farm Social Club"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>

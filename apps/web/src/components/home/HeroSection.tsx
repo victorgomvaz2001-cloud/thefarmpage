@@ -4,13 +4,14 @@ export default function HeroSection() {
   const t = useTranslations('home.hero')
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center">
+    <section className="relative flex min-h-screen items-center justify-center bg-[#1a2010]">
       <video
         src="https://cavidasthefarm.s3.eu-north-1.amazonaws.com/hero+horizontal.mp4"
         autoPlay
         loop
         muted
         playsInline
+        preload="auto"
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-[#1a2010]/75" />

@@ -18,10 +18,11 @@ export default function InviteSlideshowClient({ images, alts, activeIndex, gradi
           src={src}
           alt={alts[i] ?? ''}
           fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className={`object-cover transition-opacity duration-1000 ${
             i === activeIndex ? 'opacity-100' : 'opacity-0'
           }`}
-          priority={i === 0}
+          priority={false}
         />
       ))}
       {gradient && (

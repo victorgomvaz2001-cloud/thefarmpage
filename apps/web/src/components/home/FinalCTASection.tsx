@@ -10,6 +10,7 @@ export default function FinalCTASection() {
         src="https://picsum.photos/seed/thefarm-cta/1920/600"
         alt=""
         fill
+        sizes="100vw"
         className="object-cover"
       />
       <div className="absolute inset-0 bg-[#1a2010]/80" />

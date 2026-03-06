@@ -14,7 +14,7 @@ export default function NavbarClient({ home, contact }: Props) {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="relative border-b border-[#4a5731] bg-[#4a5731]">
+    <header className="sticky top-0 z-50 relative border-b border-[#4a5731] bg-[#4a5731]">
       <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         {/* Left: brand */}
         <div className="flex items-center">
