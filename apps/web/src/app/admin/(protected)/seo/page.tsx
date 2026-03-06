@@ -47,7 +47,29 @@ export default function AdminSEOPage() {
 
   return (
     <div>
-      <h1 className="mb-6 text-2xl font-bold text-gray-900">SEO Management</h1>
+      <div className="mb-6 flex items-center justify-between">
+        <h1 className="text-2xl font-bold text-gray-900">SEO Management</h1>
+        <div className="flex gap-2">
+          <button
+            onClick={() => router.push('/admin/seo/sitemap')}
+            className="rounded border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+          >
+            Sitemap
+          </button>
+          <button
+            onClick={() => router.push('/admin/seo/business-profile')}
+            className="rounded border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+          >
+            Business Profile
+          </button>
+          <button
+            onClick={() => router.push('/admin/seo/new')}
+            className="rounded bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          >
+            + New Route
+          </button>
+        </div>
+      </div>
       <Table
         data={items}
         columns={columns}

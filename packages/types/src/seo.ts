@@ -4,6 +4,7 @@ export interface ISEOOpenGraph {
   image?: string
   url?: string
   type?: string
+  locale?: string
 }
 
 export interface ISEOTwitterCard {
@@ -36,6 +37,7 @@ export interface ISEOPage {
   canonical?: string
   alternates?: ISEOAlternates
   robots?: ISEORobots
+  schemaMarkup?: Record<string, unknown>[]
   createdAt: string
   updatedAt: string
 }

@@ -10,7 +10,7 @@ const seoSchema = new Schema<ISEODocument>(
     description: { type: String, required: true },
     og: {
       type: new Schema(
-        { title: String, description: String, image: String, url: String, type: String },
+        { title: String, description: String, image: String, url: String, type: String, locale: String },
         { _id: false },
       ),
       required: false,
@@ -37,6 +37,7 @@ const seoSchema = new Schema<ISEODocument>(
         follow: Boolean,
       },
     },
+    schemaMarkup: [{ type: Schema.Types.Mixed }],
   },
   { timestamps: true },
 )

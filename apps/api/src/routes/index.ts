@@ -5,6 +5,8 @@ import blogRoutes from './blog.routes'
 import locationRoutes from './location.routes'
 import userRoutes from './user.routes'
 import uploadRoutes from './upload.routes'
+import businessProfileRoutes from './business-profile.routes'
+import sitemapRoutes from './sitemap.routes'
 
 const router: IRouter = Router()
 
@@ -14,6 +16,8 @@ router.use('/blog', blogRoutes)
 router.use('/locations', locationRoutes)
 router.use('/admin/users', userRoutes)
 router.use('/admin/upload', uploadRoutes)
+router.use('/business-profile', businessProfileRoutes)
+router.use('/sitemap', sitemapRoutes)
 
 router.get('/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() })

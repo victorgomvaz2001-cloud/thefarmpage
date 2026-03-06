@@ -69,6 +69,7 @@ export default function EditSEOPage() {
         image: get('og.image') || undefined,
         url: get('og.url') || undefined,
         type: get('og.type') || undefined,
+        locale: get('og.locale') || undefined,
       },
       twitterCard: {
         card: cardValue
@@ -161,6 +162,9 @@ export default function EditSEOPage() {
             </Field>
             <Field label="OG Image URL">
               <input name="og.image" defaultValue={seo.og?.image ?? ''} className={inputCls} />
+            </Field>
+            <Field label="OG Locale">
+              <input name="og.locale" defaultValue={seo.og?.locale ?? ''} placeholder="es_ES" className={inputCls} />
             </Field>
           </div>
         </section>

@@ -1,4 +1,5 @@
 export * from './seo'
+export * from './business-profile'
 export * from './blog'
 export * from './location'
 export * from './user'
