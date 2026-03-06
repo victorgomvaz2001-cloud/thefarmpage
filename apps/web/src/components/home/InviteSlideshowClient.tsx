@@ -6,9 +6,10 @@ interface Props {
   images: string[]
   alts: string[]
   activeIndex: number
+  gradient?: boolean
 }
 
-export default function InviteSlideshowClient({ images, alts, activeIndex }: Props) {
+export default function InviteSlideshowClient({ images, alts, activeIndex, gradient = true }: Props) {
   return (
     <div className="relative h-full w-full overflow-hidden">
       {images.map((src, i) => (
@@ -23,8 +24,9 @@ export default function InviteSlideshowClient({ images, alts, activeIndex }: Pro
           priority={i === 0}
         />
       ))}
-      {/* Gradient: blends left edge into section background */}
-      <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
+      {gradient && (
+        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
+      )}
     </div>
   )
 }
