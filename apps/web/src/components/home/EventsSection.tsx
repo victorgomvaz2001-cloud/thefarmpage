@@ -79,12 +79,9 @@ export default function EventsSection() {
               />
               <div className={`absolute inset-0 transition-colors duration-500 ${isActive ? 'bg-[#1a2010]/55' : 'bg-black/60 group-hover:bg-black/45'}`} />
 
-              {/* Collapsed: vertical name */}
+              {/* Collapsed: horizontal name centered */}
               <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${isActive ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-                <span
-                  className="font-storica font-bold text-white text-sm tracking-widest"
-                  style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
-                >
+                <span className="font-storica font-bold text-white text-sm tracking-widest text-center px-2">
                   {t(`${key}.title`)}
                 </span>
               </div>
