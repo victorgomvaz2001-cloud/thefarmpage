@@ -138,34 +138,46 @@
     },
     "faq": {
       "label": "¿Tienes dudas?",
-      "title": "Preguntas frecuentes",
+      "title": "Preguntas Frecuentes – Club Cannábico Vic",
       "invitation": {
-        "question": "¿Cómo consigo una invitación?",
-        "answer": "Puedes solicitar una invitación a través del formulario de contacto de esta página. El equipo la revisará y te responderá en un plazo de 24 a 48 horas laborables."
+        "question": "¿Cómo consigo una invitación al club?",
+        "answer": "Puedes solicitar una invitación a través del formulario de la web. Nuestro equipo revisará tu solicitud y te contactará en un plazo de 24 a 48 horas laborables."
+      },
+      "legal": {
+        "question": "¿Es legal un club social cannábico en Cataluña?",
+        "answer": "Los clubes sociales cannábicos en Cataluña operan dentro de un marco legal específico como asociaciones privadas sin ánimo de lucro. El consumo está limitado al espacio privado del club y está reservado exclusivamente a socios registrados mayores de edad."
+      },
+      "cost": {
+        "question": "¿Cuánto cuesta la cuota de socio?",
+        "answer": "La membresía es anual. Ponte en contacto con nosotros a través del formulario de solicitud para recibir información actualizada sobre las cuotas y los beneficios incluidos."
       },
       "membership": {
         "question": "¿Es obligatorio hacerse socio?",
-        "answer": "Sí. The Farm es un club privado y el acceso está restringido a socios o invitados de socios. La cuota anual cubre el acceso al club y a todos los beneficios exclusivos."
+        "answer": "Sí. The Farm es una asociación privada y únicamente los socios registrados pueden acceder al club."
+      },
+      "location": {
+        "question": "¿Dónde está ubicado The Farm Social Club?",
+        "answer": "Nos encontramos en el Carrer de Francesc Pla el Vigatà, Vic, Cataluña. Vic se encuentra a aproximadamente 60 km de Barcelona."
       },
       "guest": {
         "question": "¿Puedo traer un acompañante?",
-        "answer": "Sí, los socios pueden traer un invitado siempre que lo registren previamente. El socio es responsable de la conducta de su acompañante durante la visita."
+        "answer": "No. El acceso está reservado únicamente a socios registrados del club."
       },
       "documents": {
-        "question": "¿Qué documentos necesito?",
-        "answer": "Es suficiente con tu DNI, NIE o pasaporte en vigor. Debe acreditar que eres mayor de 18 años. No se admiten documentos caducados."
-      },
-      "hours": {
-        "question": "¿Cuál es el horario del club?",
-        "answer": "Estamos abiertos de martes a domingo. Consulta el horario actualizado en la sección de contacto o escríbenos directamente."
-      },
-      "edibles": {
-        "question": "¿Qué son los comestibles artesanales?",
-        "answer": "Son productos de elaboración propia: brownies, galletas, gominolas y otras recetas hechas a mano con ingredientes de calidad. Los socios pueden probarlos en las catas periódicas que organizamos."
+        "question": "¿Qué documentos necesito para acceder?",
+        "answer": "Debes presentar un documento de identidad válido en cada visita: DNI, NIE o pasaporte en vigor."
       },
       "student": {
-        "question": "¿Cómo funciona el descuento para estudiantes?",
-        "answer": "Si eres estudiante universitario, tienes un descuento en todos los productos del club. Solo tienes que acreditar tu condición de estudiante la primera vez que lo solicites."
+        "question": "¿Hay descuento para estudiantes universitarios?",
+        "answer": "Sí. Los estudiantes universitarios pueden acceder a descuentos especiales en productos seleccionados presentando su acreditación universitaria válida."
+      },
+      "difference": {
+        "question": "¿Qué diferencia hay entre un cannabis social club y una asociación cannábica?",
+        "answer": "En Cataluña ambos términos se usan habitualmente para describir el mismo modelo: una asociación privada sin ánimo de lucro donde los socios pueden consumir cannabis de forma colectiva dentro del espacio privado del club."
+      },
+      "tourist": {
+        "question": "¿Puedo visitar el club como turista?",
+        "answer": "Los visitantes y turistas mayores de 18 años pueden solicitar ser socios del club a través del formulario de invitación. El proceso de admisión es el mismo para todos los solicitantes."
       }
     },
     "finalCta": {
@@ -181,6 +193,60 @@
   "nav": {
     "home": "Inicio",
     "contact": "Contacto"
+  },
+  "legal": {
+    "toc": "Contenido"
+  },
+  "cookieBanner": {
+    "message": "Usamos cookies técnicas imprescindibles para el funcionamiento del sitio. Puedes aceptarlas o rechazarlas.",
+    "learnMore": "Más información",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: marzo de 2026",
+    "intro": "The Farm Social Club («el Club») trata los datos personales de sus socios y usuarios con estricta sujeción al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).",
+    "s1Title": "Responsable del tratamiento",
+    "s1Content": "Denominación: The Farm Social Club\nDomicilio: Carrer Francesc Pla el Vigatà, 14 · Vic, Barcelona\nContacto: thefarmvic@gmail.com",
+    "s2Title": "Datos que recogemos",
+    "s2Content": "Recogemos únicamente los datos que facilitas de forma voluntaria a través del formulario de contacto o solicitud de membresía: nombre, dirección de correo electrónico y número de teléfono. No recogemos datos de categorías especiales.",
+    "s3Title": "Finalidad y base legal",
+    "s3Content": "Tus datos se tratan para gestionar tu solicitud de alta como socio y mantenerte informado de las actividades del club. La base legal del tratamiento es tu consentimiento expreso (art. 6.1.a RGPD).",
+    "s4Title": "Conservación de los datos",
+    "s4Content": "Conservamos tus datos mientras mantengas la condición de socio activo o hasta que solicites su supresión. Finalizada la relación, los datos se conservarán durante el plazo legalmente exigible.",
+    "s5Title": "Cesión de datos",
+    "s5Content": "No cedemos tus datos a terceros salvo obligación legal expresa. No se realizan transferencias internacionales de datos.",
+    "s6Title": "Tus derechos",
+    "s6Content": "Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión, portabilidad, limitación y oposición escribiendo a thefarmvic@gmail.com. Si consideras que el tratamiento vulnera la normativa vigente, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+  },
+  "cookiesPolicy": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: marzo de 2026",
+    "intro": "Este sitio web utiliza únicamente cookies técnicas propias necesarias para su correcto funcionamiento. No utilizamos cookies publicitarias ni de seguimiento de terceros.",
+    "s1Title": "¿Qué son las cookies?",
+    "s1Content": "Las cookies son pequeños ficheros de texto que se almacenan en tu navegador cuando visitas una página web. Permiten recordar información de sesión y mejorar la experiencia de navegación.",
+    "s2Title": "Cookies que utilizamos",
+    "s2Content": "Únicamente empleamos cookies técnicas de sesión imprescindibles para el funcionamiento del sitio. Estas cookies no recogen datos personales ni se utilizan con fines publicitarios o de análisis de comportamiento.",
+    "s3Title": "Cómo gestionar las cookies",
+    "s3Content": "Puedes configurar tu navegador para rechazar o eliminar las cookies en cualquier momento. Ten en cuenta que desactivarlas puede afectar al correcto funcionamiento de algunas partes de la web.\n\nGuías de configuración: Chrome · Firefox · Safari · Edge.",
+    "s4Title": "Más información",
+    "s4Content": "Si tienes cualquier duda sobre nuestra política de cookies, puedes contactarnos en thefarmvic@gmail.com."
+  },
+  "legalNotice": {
+    "title": "Aviso Legal",
+    "lastUpdated": "Última actualización: marzo de 2026",
+    "intro": "En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se facilita la siguiente información identificativa:",
+    "s1Title": "Datos identificativos",
+    "s1Content": "Denominación: The Farm Social Club\nNaturaleza jurídica: Asociación privada de consumidores de cannabis\nDomicilio social: Carrer Francesc Pla el Vigatà, 14 · Vic, Barcelona\nContacto: thefarmvic@gmail.com",
+    "s2Title": "Objeto y condiciones de uso",
+    "s2Content": "Este sitio web tiene carácter estrictamente informativo y está destinado a la difusión de información sobre The Farm Social Club. El Club es una asociación privada sin ánimo de lucro cuyo acceso está restringido a socios mayores de 18 años debidamente registrados. El uso de este sitio implica la aceptación de las presentes condiciones.",
+    "s3Title": "Propiedad intelectual e industrial",
+    "s3Content": "Todos los contenidos de este sitio web —textos, imágenes, logotipos y diseño gráfico— son propiedad de The Farm Social Club o de terceros que han autorizado su uso. Queda expresamente prohibida su reproducción, distribución o comunicación pública sin autorización escrita del titular.",
+    "s4Title": "Limitación de responsabilidad",
+    "s4Content": "The Farm Social Club no asume responsabilidad alguna por los daños derivados del uso de la información contenida en este sitio ni por posibles fallos técnicos ajenos a su control. Nos reservamos el derecho a modificar o retirar los contenidos sin previo aviso.",
+    "s5Title": "Ley aplicable y jurisdicción",
+    "s5Content": "Las presentes condiciones se rigen por la legislación española. Para la resolución de cualquier controversia, ambas partes se someten expresamente a los juzgados y tribunales de la ciudad de Vic (Barcelona), con renuncia a cualquier otro fuero que pudiera corresponderles."
   },
   "footer": {
     "info": {
@@ -198,7 +264,7 @@
     "legal": {
       "title": "Legal",
       "privacy": "Política de privacidad",
-      "terms": "Términos y condiciones",
+      "terms": "Aviso legal",
       "cookies": "Política de cookies"
     },
     "social": {

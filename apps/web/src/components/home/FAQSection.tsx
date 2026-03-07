@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react'
 import { useTranslations } from 'next-intl'
 
-const FAQS = ['invitation', 'membership', 'guest', 'documents', 'hours', 'edibles', 'student'] as const
+const FAQS = ['invitation', 'legal', 'cost', 'membership', 'location', 'guest', 'documents', 'student', 'difference', 'tourist'] as const
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [open, setOpen] = useState(false)

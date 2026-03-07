@@ -138,34 +138,46 @@
     },
     "faq": {
       "label": "Got questions?",
-      "title": "Frequently Asked Questions",
+      "title": "Frequently Asked Questions – Cannabis Club Vic Spain",
       "invitation": {
-        "question": "How do I get an invitation?",
-        "answer": "You can request an invitation through the contact form on this page. The team will review it and get back to you within 24 to 48 business hours."
+        "question": "How do I get an invitation to the club?",
+        "answer": "You can request an invitation through the form on our website. Our team will review your application and contact you within 24 to 48 working hours."
+      },
+      "legal": {
+        "question": "Is a cannabis social club legal in Catalonia?",
+        "answer": "Cannabis social clubs in Catalonia operate within a specific legal framework as private, non-profit associations. Consumption is restricted to the private club space and is exclusively reserved for registered adult members."
+      },
+      "cost": {
+        "question": "How much does membership cost?",
+        "answer": "Membership is annual. Please contact us through the request form to receive up-to-date information on fees and included benefits."
       },
       "membership": {
-        "question": "Is membership required?",
-        "answer": "Yes. The Farm is a private club and access is restricted to members or guests of members. The annual fee covers club access and all exclusive benefits."
+        "question": "Is membership mandatory?",
+        "answer": "Yes. The Farm is a private association and only registered members may access the club."
+      },
+      "location": {
+        "question": "Where is The Farm Social Club located?",
+        "answer": "We are located on Carrer de Francesc Pla el Vigatà, Vic, Catalonia — approximately 60 km from Barcelona."
       },
       "guest": {
         "question": "Can I bring a guest?",
-        "answer": "Yes, members can bring one guest as long as they register them in advance. The member is responsible for their guest's conduct during the visit."
+        "answer": "No. Access is reserved exclusively for registered members of the club."
       },
       "documents": {
-        "question": "What documents do I need?",
-        "answer": "A valid national ID, NIE or passport is sufficient. It must confirm you are 18 or older. Expired documents are not accepted."
-      },
-      "hours": {
-        "question": "What are the club's opening hours?",
-        "answer": "We're open Tuesday through Sunday. Check the updated schedule in the contact section or reach out to us directly."
-      },
-      "edibles": {
-        "question": "What are artisan edibles?",
-        "answer": "They are our own in-house creations: brownies, cookies, gummies and other recipes handmade with quality ingredients. Members can try them at our periodic tasting events."
+        "question": "What documents do I need to enter?",
+        "answer": "You must present a valid identity document on every visit: a national ID card, NIE or valid passport."
       },
       "student": {
-        "question": "How does the student discount work?",
-        "answer": "If you're a university student, you get a discount on all club products. You just need to verify your student status the first time you request it."
+        "question": "Is there a student discount?",
+        "answer": "Yes. University students can access special discounts on selected products by presenting a valid student ID."
+      },
+      "difference": {
+        "question": "What is the difference between a cannabis social club and a cannabis association?",
+        "answer": "In Catalonia both terms are commonly used to describe the same model: a private non-profit association where members can collectively consume cannabis within the private club space."
+      },
+      "tourist": {
+        "question": "Can I visit as a tourist?",
+        "answer": "Visitors and tourists aged 18 and over can apply to become members through the invitation form. The admissions process is the same for all applicants."
       }
     },
     "finalCta": {
@@ -181,6 +193,60 @@
   "nav": {
     "home": "Home",
     "contact": "Contact"
+  },
+  "legal": {
+    "toc": "Contents"
+  },
+  "cookieBanner": {
+    "message": "We use essential technical cookies necessary for the site to function. You can accept or reject them.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "intro": "The Farm Social Club ('the Club') handles personal data in strict compliance with EU Regulation 2016/679 (GDPR) and Spanish Organic Law 3/2018 on Personal Data Protection (LOPDGDD).",
+    "s1Title": "Data controller",
+    "s1Content": "Name: The Farm Social Club\nAddress: Carrer Francesc Pla el Vigatà, 14 · Vic, Barcelona\nContact: thefarmvic@gmail.com",
+    "s2Title": "Data we collect",
+    "s2Content": "We only collect data you provide voluntarily through the contact or membership request form: name, email address and phone number. We do not collect special-category data.",
+    "s3Title": "Purpose and legal basis",
+    "s3Content": "Your data is processed to handle your membership application and to keep you informed of club activities. The legal basis for processing is your explicit consent (Art. 6.1.a GDPR).",
+    "s4Title": "Data retention",
+    "s4Content": "We keep your data for as long as you remain an active member or until you request deletion. After the relationship ends, data is retained for the period required by applicable law.",
+    "s5Title": "Data sharing",
+    "s5Content": "We do not share your data with third parties except where required by law. We do not carry out international data transfers.",
+    "s6Title": "Your rights",
+    "s6Content": "You may exercise your rights of access, rectification, erasure, portability, restriction and objection at any time by writing to thefarmvic@gmail.com. If you believe your data is being processed in breach of applicable regulations, you may lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+  },
+  "cookiesPolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "intro": "This website uses only technical first-party cookies necessary for its proper operation. We do not use advertising or third-party tracking cookies.",
+    "s1Title": "What are cookies?",
+    "s1Content": "Cookies are small text files stored in your browser when you visit a website. They allow session information to be remembered and improve your browsing experience.",
+    "s2Title": "Cookies we use",
+    "s2Content": "We only use essential technical session cookies required for the site to function correctly. These cookies do not collect personal data and are not used for advertising or behavioural analysis purposes.",
+    "s3Title": "How to manage cookies",
+    "s3Content": "You can configure your browser to reject or delete cookies at any time. Please note that disabling them may affect the correct functioning of some parts of the site.\n\nConfiguration guides: Chrome · Firefox · Safari · Edge.",
+    "s4Title": "Further information",
+    "s4Content": "If you have any questions about our cookie policy, please contact us at thefarmvic@gmail.com."
+  },
+  "legalNotice": {
+    "title": "Legal Notice",
+    "lastUpdated": "Last updated: March 2026",
+    "intro": "In compliance with Article 10 of Spanish Law 34/2002 of 11 July on Information Society Services and Electronic Commerce (LSSI-CE), the following identifying information is provided:",
+    "s1Title": "Identifying information",
+    "s1Content": "Name: The Farm Social Club\nLegal form: Private non-profit cannabis consumer association\nRegistered address: Carrer Francesc Pla el Vigatà, 14 · Vic, Barcelona\nContact: thefarmvic@gmail.com",
+    "s2Title": "Purpose and terms of use",
+    "s2Content": "This website is strictly informational and is intended solely to provide information about The Farm Social Club. The Club is a private non-profit association whose access is restricted to registered members aged 18 and over. Use of this website implies acceptance of these terms.",
+    "s3Title": "Intellectual and industrial property",
+    "s3Content": "All content on this website — texts, images, logos and graphic design — is the property of The Farm Social Club or of third parties who have authorised its use. Reproduction, distribution or public communication without written authorisation from the rights holder is expressly prohibited.",
+    "s4Title": "Limitation of liability",
+    "s4Content": "The Farm Social Club accepts no liability for damages arising from the use of information on this site or from any technical failures beyond its control. We reserve the right to modify or withdraw content without prior notice.",
+    "s5Title": "Applicable law and jurisdiction",
+    "s5Content": "These terms are governed by Spanish law. For the resolution of any dispute, both parties expressly submit to the courts of Vic (Barcelona), waiving any other jurisdiction that may apply."
   },
   "footer": {
     "info": {
@@ -198,7 +264,7 @@
     "legal": {
       "title": "Legal",
       "privacy": "Privacy Policy",
-      "terms": "Terms & Conditions",
+      "terms": "Legal Notice",
       "cookies": "Cookie Policy"
     },
     "social": {

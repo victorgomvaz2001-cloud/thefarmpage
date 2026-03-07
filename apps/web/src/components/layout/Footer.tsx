@@ -45,9 +45,9 @@ export default async function Footer() {
               {t('legal.title')}
             </h3>
             <ul className="space-y-2">
-              <li><Link href="/privacy" className="text-sm text-white hover:text-white/70 transition-colors">{t('legal.privacy')}</Link></li>
-              <li><Link href="/terms" className="text-sm text-white hover:text-white/70 transition-colors">{t('legal.terms')}</Link></li>
-              <li><Link href="/cookies" className="text-sm text-white hover:text-white/70 transition-colors">{t('legal.cookies')}</Link></li>
+              <li><Link href="/privacy-policy" className="text-sm text-white hover:text-white/70 transition-colors">{t('legal.privacy')}</Link></li>
+              <li><Link href="/legal-notice" className="text-sm text-white hover:text-white/70 transition-colors">{t('legal.terms')}</Link></li>
+              <li><Link href="/cookies-policy" className="text-sm text-white hover:text-white/70 transition-colors">{t('legal.cookies')}</Link></li>
             </ul>
           </div>
 
