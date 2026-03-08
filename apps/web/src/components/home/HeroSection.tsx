@@ -16,9 +16,6 @@ export default function HeroSection() {
       />
       <div className="absolute inset-0 bg-[#1a2010]/75" />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <span className="inline-block mb-6 text-xs font-semibold uppercase tracking-[0.4em] text-[#a8bc7a]">
-          {t('label')}
-        </span>
         <h1 className="font-storica text-5xl font-bold tracking-tight text-white md:text-7xl leading-tight">
           {t('headline')}
         </h1>
