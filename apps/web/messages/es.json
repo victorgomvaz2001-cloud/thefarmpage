@@ -37,19 +37,19 @@
       "sundayBadge": "Cada domingo",
       "edibleTasting": {
         "title": "Cata de Comestibles",
-        "text": "Descubre y valora nuestras nuevas creaciones artesanales. Una experiencia sensorial única donde los socios prueban y opinan sobre las últimas recetas."
+        "text": "Descubre nuestras últimas creaciones artesanales en las catas privadas del club. Los socios prueban nuevas recetas, comparten opiniones y disfrutan de una experiencia gastronómica cannábica única."
       },
       "poker": {
         "title": "Noches de Póker",
-        "text": "Torneos de póker con ambiente relajado y buena compañía. Una noche perfecta para desconectar y pasar un buen rato con los socios."
+        "text": "Torneos de póker regulares en un ambiente relajado. Una noche diferente para los socios del club."
       },
       "playstation": {
         "title": "Torneos PlayStation",
-        "text": "Competiciones de videojuegos abiertas a todos los socios. Ven a demostrar lo que vales en FIFA, NBA 2K y muchos más títulos."
+        "text": "Competiciones de videojuegos con títulos populares como FIFA, NBA 2K y otros juegos multijugador. Una forma divertida de compartir tiempo con la comunidad."
       },
       "memberSunday": {
         "title": "Domingo del Socio",
-        "text": "Cada domingo es el día de los socios. Descuento especial en todos los productos seleccionados y el ambiente más especial de la semana."
+        "text": "Cada domingo celebramos el Domingo del Socio con descuentos en productos seleccionados, actividades especiales y el mejor ambiente de la semana."
       }
     },
     "getInvite": {
@@ -62,65 +62,42 @@
     "clubRules": {
       "label": "Cómo nos comportamos",
       "title": "Normas Internas del Club",
-      "intro": "The Farm Social Club es un club privado creado para compartir un espacio de paz y tranquilidad. Este proyecto existe gracias al compromiso de todos los socios. Cuidarlo es una responsabilidad compartida.",
+      "intro": "The Farm Social Club es un espacio privado diseñado para la tranquilidad, el respeto y la convivencia entre socios. Este proyecto existe gracias al compromiso de todos sus miembros.",
       "closing": "The Farm es cosa de todos. Cuidemos nuestra comunidad y hagámosla crecer. Si tienes ideas o sugerencias, estaremos encantados de valorarlas.",
-      "access": {
-        "title": "Acceso",
-        "r1": "El acceso está estrictamente limitado a socios registrados mayores de 18 años.",
-        "r2": "No se permite la entrada a personas no socias."
-      },
-      "consumption": {
-        "title": "Consumo y funcionamiento",
-        "r1": "El consumo está limitado exclusivamente al espacio privado del club.",
-        "r2": "Está totalmente prohibido fumar o consumir en la calle o en los alrededores del local.",
-        "r3": "No se permite introducir productos del exterior, ya que el club se sostiene gracias a las aportaciones de sus socios.",
-        "r4": "No se permite la venta ni el intercambio entre socios."
-      },
-      "coexistence": {
-        "title": "Convivencia y comunidad",
-        "r1": "Este es un espacio de paz, respeto y tranquilidad.",
-        "r2": "No se tolerarán malas actitudes ni faltas de respeto hacia los socios, los trabajadores ni el local.",
-        "r3": "Mantener el local limpio y cuidar las instalaciones es responsabilidad de todos.",
-        "r4": "Se requiere mantener una higiene personal adecuada por respeto al resto de la comunidad.",
-        "r5": "Cada socio representa al club; el comportamiento individual afecta a toda la comunidad."
-      },
-      "activities": {
-        "title": "Actividades del club",
-        "r1": "Organizamos actividades para los socios: catas, actividades sociales e iniciativas culturales.",
-        "r2": "El objetivo es fortalecer la comunidad, el conocimiento y la convivencia."
-      },
-      "responsibility": {
-        "title": "Responsabilidad",
-        "r1": "Cada socio es responsable de su comportamiento dentro y fuera del club.",
-        "r2": "Se exige discreción y respeto para proteger a la asociación y a sus miembros."
-      },
-      "breach": {
-        "title": "Incumplimiento",
-        "r1": "El incumplimiento de estas normas puede conllevar una advertencia o la expulsión.",
-        "r2": "El club se reserva el derecho de admisión y permanencia."
-      }
+      "r1": "Acceso restringido a socios registrados mayores de 18 años.",
+      "r2": "El consumo está limitado al espacio privado del club.",
+      "r3": "Prohibido consumir en la calle o en los alrededores del local.",
+      "r4": "No se permite introducir productos del exterior.",
+      "r5": "No se permite la venta ni el intercambio entre socios.",
+      "r6": "Se exige respeto hacia socios, trabajadores e instalaciones.",
+      "r7": "Se requiere discreción para proteger a la asociación y a todos sus miembros.",
+      "r8": "El incumplimiento puede conllevar advertencias o expulsión del club."
     },
     "whatWillYouFind": {
-      "label": "Lo que te espera",
+      "label": "Qué encontrarás",
       "title": "Qué Encontrarás en Nuestro Club",
-      "lowPrice": {
-        "title": "Precios Bajos",
-        "p1": "En The Farm Social Club los socios pueden acceder a una selección variada dentro del club con algunos de los precios más bajos en Vic. Nuestro objetivo es que los miembros puedan disfrutar del club con precios accesibles y un ambiente relajado, convirtiendo a The Farm en un punto de referencia para la comunidad.",
-        "p2": "Trabajamos para ofrecer a nuestros socios una buena variedad y precios competitivos en Vic, siempre dentro de un espacio pensado para compartir, desconectar y formar parte de la comunidad.",
-        "item1": "Calidad constante y selección cuidada de variedades",
-        "item2": "Cultivo de proximidad y responsable",
-        "item3": "Precios accesibles para la comunidad"
+      "edibles": {
+        "title": "Comestibles Cannábicos Artesanales",
+        "intro": "The Farm elabora comestibles artesanales hechos a mano con ingredientes de primera calidad. Nuestras creaciones actuales incluyen:",
+        "item1": "Brownies artesanales",
+        "item2": "Galletas infusionadas",
+        "item3": "Gominolas",
+        "item4": "Recetas exclusivas del club",
+        "closing": "Los socios pueden descubrir nuevas recetas en nuestras catas privadas de comestibles — una experiencia gastronómica cannábica única."
       },
       "localStrains": {
         "title": "Cultivo Autóctono de Cataluña",
-        "text": "Nuestra selección se cultiva aquí mismo en Cataluña. Fresca, local y cuidadosamente elegida para reflejar lo mejor de nuestra región."
+        "intro": "Trabajamos con variedades cultivadas aquí mismo en Cataluña, siguiendo prácticas de cultivo responsables y sostenibles. Los socios pueden esperar:",
+        "item1": "Calidad constante y selección cuidada de variedades",
+        "item2": "Cultivo local y responsable",
+        "item3": "Precios accesibles para la comunidad"
       },
       "community": {
-        "title": "Comunidad Activa",
-        "listIntro": "La comunidad es uno de los pilares de The Farm. Organizamos actividades regulares para socios:",
+        "title": "Comunidad Social Activa",
+        "listIntro": "La comunidad es el corazón de The Farm. Organizamos actividades regulares para socios:",
         "item1": "Juegos de mesa y torneos de videojuegos",
         "item2": "Eventos sociales y culturales",
-        "item3": "Catas de comestibles exclusivas",
+        "item3": "Catas exclusivas de comestibles",
         "item4": "Noches temáticas y encuentros de socios"
       }
     },
@@ -129,43 +106,43 @@
     },
     "inviteProcess": {
       "label": "Cómo funciona",
-      "title": "El proceso paso a paso",
+      "title": "Proceso Paso a Paso",
       "step1": {
         "title": "Solicita el acceso",
-        "text": "Rellena el formulario de contacto con tus datos básicos. No hace falta nada más para empezar."
+        "text": "Completa el formulario con tus datos básicos."
       },
       "step2": {
         "title": "Revisamos tu solicitud",
-        "text": "El equipo de The Farm revisa tu solicitud y se pone en contacto contigo en un plazo de 24 a 48 horas."
+        "text": "Nuestro equipo se pondrá en contacto contigo en 24–48 horas laborables."
       },
       "step3": {
         "title": "Recibes tu invitación",
-        "text": "Si todo es correcto, recibirás tu invitación personalizada. Guárdala bien, la necesitarás en tu primera visita."
+        "text": "Si tu solicitud es aprobada, recibirás una invitación personalizada."
       },
       "step4": {
         "title": "Bienvenido a The Farm",
-        "text": "Preséntate en el club con tu invitación e identificación. A partir de aquí, ya eres parte de la familia."
+        "text": "Presenta tu invitación y tu identificación en la puerta."
       }
     },
     "requirements": {
       "label": "Antes de venir",
-      "title": "Requisitos de acceso",
+      "title": "Requisitos de Acceso",
       "studentBadge": "Descuento activo",
       "age": {
         "title": "Mayoría de edad",
-        "text": "Es imprescindible tener 18 años cumplidos. Se comprobará la identificación en la entrada en cada visita."
+        "text": "18 años cumplidos (se comprueba en cada visita)."
       },
       "membership": {
-        "title": "Cuota de socio",
-        "text": "La membresía es anual. Incluye acceso al club, eventos exclusivos, descuentos y todos los beneficios de socio."
+        "title": "Cuota de membresía de por vida",
+        "text": "Se paga una única vez en tu primera visita. Te da acceso permanente al club, eventos y descuentos exclusivos."
       },
       "student": {
         "title": "Descuento universitario",
-        "text": "Si eres estudiante universitario, tienes un descuento aplicado en todos los productos. Solo necesitas acreditar tu condición de estudiante."
+        "text": "Disponible para estudiantes con acreditación válida."
       },
       "legal": {
         "title": "Documentación",
-        "text": "Es obligatorio presentar DNI, NIE o pasaporte en vigor en cada visita. Sin documentación no hay acceso."
+        "text": "DNI, NIE o pasaporte en vigor."
       }
     },
     "faq": {

@@ -98,12 +98,12 @@ export default function WhatWillYouFindSection() {
   const slides = [
     {
       illustration: <PriceIllustration />,
-      title: t('lowPrice.title'),
+      title: t('edibles.title'),
       content: (
         <>
-          <p className="text-sm text-gray-500 leading-relaxed">{t('lowPrice.p1')}</p>
-          <p className="mt-3 text-sm text-gray-500 leading-relaxed">{t('lowPrice.p2')}</p>
-          <BulletList items={[t('lowPrice.item1'), t('lowPrice.item2'), t('lowPrice.item3')]} />
+          <p className="text-sm text-gray-500 leading-relaxed">{t('edibles.intro')}</p>
+          <BulletList items={[t('edibles.item1'), t('edibles.item2'), t('edibles.item3'), t('edibles.item4')]} />
+          <p className="mt-3 text-sm text-gray-500 leading-relaxed">{t('edibles.closing')}</p>
         </>
       ),
     },
@@ -111,7 +111,10 @@ export default function WhatWillYouFindSection() {
       illustration: <LeafIllustration />,
       title: t('localStrains.title'),
       content: (
-        <p className="text-sm text-gray-500 leading-relaxed">{t('localStrains.text')}</p>
+        <>
+          <p className="text-sm text-gray-500 leading-relaxed">{t('localStrains.intro')}</p>
+          <BulletList items={[t('localStrains.item1'), t('localStrains.item2'), t('localStrains.item3')]} />
+        </>
       ),
     },
     {
@@ -157,45 +160,51 @@ export default function WhatWillYouFindSection() {
           </h2>
         </div>
 
-        {/* Slide content — all slides rendered for SEO, active one shown visually */}
-        {slides.map((slide, i) => {
-          const isActive = i === active
-          return (
-            <div
-              key={i}
-              aria-hidden={!isActive}
-              className={!isActive ? 'sr-only' : 'transition-all duration-[350ms] ease-in-out'}
-              style={isActive ? {
-                opacity: visible ? 1 : 0,
-                transform: visible ? 'translateY(0)' : 'translateY(10px)',
-              } : undefined}
-            >
-              <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
+        {/* Slide content — fixed height on both mobile and desktop */}
+        <div className="relative h-[460px] lg:h-[320px] overflow-hidden">
+          {slides.map((slide, i) => {
+            const isActive = i === active
+            return (
+              <div
+                key={i}
+                aria-hidden={!isActive}
+                className="absolute inset-0 transition-all duration-[350ms] ease-in-out"
+                style={{
+                  opacity: isActive ? (visible ? 1 : 0) : 0,
+                  transform: isActive ? (visible ? 'translateY(0)' : 'translateY(10px)') : 'translateY(10px)',
+                  pointerEvents: isActive ? 'auto' : 'none',
+                  visibility: isActive ? 'visible' : 'hidden',
+                }}
+              >
+                <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-16 h-full">
 
-                {/* Illustration */}
-                <div className="flex items-center justify-center lg:w-[42%] shrink-0">
-                  {slide.illustration}
-                </div>
+                  {/* Illustration — 120px on mobile, full width on desktop */}
+                  <div className="flex items-center justify-center lg:w-[42%] shrink-0">
+                    <div className="w-[120px] lg:w-full lg:max-w-none">
+                      {slide.illustration}
+                    </div>
+                  </div>
 
-                {/* Text */}
-                <div className="lg:w-[58%]">
-                  <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#4a5731]/60 mb-3">
-                    0{i + 1} / 0{slides.length}
-                  </p>
-                  <h3 className="font-storica text-3xl font-bold tracking-tight text-gray-900">
-                    {slide.title}
-                  </h3>
-                  <div className="mt-4">
-                    {slide.content}
+                  {/* Text */}
+                  <div className="lg:w-[58%]">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#4a5731]/60 mb-3">
+                      0{i + 1} / 0{slides.length}
+                    </p>
+                    <h3 className="font-storica text-3xl font-bold tracking-tight text-gray-900">
+                      {slide.title}
+                    </h3>
+                    <div className="mt-4">
+                      {slide.content}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
 
         {/* Navigation */}
-        <div className="mt-12 flex items-center gap-3">
+        <div className="mt-12 flex items-center gap-3 justify-center">
           {slides.map((_, i) => (
             <button
               key={i}

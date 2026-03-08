@@ -142,27 +142,37 @@ export default function EventsSection() {
         {EVENTS.map(({ key, src }, i) => {
           const isActive = active === i
           return (
-            <div key={key}>
+            <div
+              key={key}
+              className="relative overflow-hidden"
+              style={{
+                height: isActive ? '320px' : '64px',
+                transition: 'height 0.5s ease-in-out',
+              }}
+            >
+              <Image src={src} alt={t(`${key}.title`)} fill sizes="100vw" className="object-cover" />
+              <div className={`absolute inset-0 transition-colors duration-500 ${isActive ? 'bg-[#1a2010]/60' : 'bg-black/65'}`} />
+
+              {/* Header row — always visible */}
               <button
-                className="relative w-full h-16 flex items-center px-6 overflow-hidden"
+                className="absolute top-0 left-0 right-0 h-16 flex items-center px-6 z-10"
                 onClick={() => handleClick(i)}
               >
-                <Image src={src} alt="" fill sizes="100vw" className="object-cover brightness-[0.35]" />
-                <h3 className="relative z-10 font-storica font-bold text-white">{t(`${key}.title`)}</h3>
-                <span className={`relative z-10 ml-auto text-white/70 text-xs transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}>▼</span>
+                <h3 className="font-storica font-bold text-white">{t(`${key}.title`)}</h3>
+                <span className={`ml-auto text-white/70 text-xs transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}>▼</span>
               </button>
-              <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isActive ? 'max-h-80' : 'max-h-0'}`}>
-                <div className="relative h-64">
-                  <Image src={src} alt={t(`${key}.title`)} fill sizes="100vw" className="object-cover" />
-                  <div className="absolute inset-0 bg-[#1a2010]/60 flex flex-col justify-end p-6">
-                    <p className="text-white/80 text-sm leading-relaxed">{t(`${key}.text`)}</p>
-                    {key === 'memberSunday' && (
-                      <span className="mt-3 inline-block bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#4a5731] rounded-full w-fit">
-                        {t('sundayBadge')}
-                      </span>
-                    )}
-                  </div>
-                </div>
+
+              {/* Expanded content */}
+              <div
+                className="absolute bottom-0 left-0 right-0 p-6 z-10 transition-opacity duration-300"
+                style={{ opacity: isActive ? 1 : 0, pointerEvents: isActive ? 'auto' : 'none' }}
+              >
+                <p className="text-white/80 text-sm leading-relaxed">{t(`${key}.text`)}</p>
+                {key === 'memberSunday' && (
+                  <span className="mt-3 inline-block bg-white px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#4a5731] rounded-full w-fit">
+                    {t('sundayBadge')}
+                  </span>
+                )}
               </div>
             </div>
           )

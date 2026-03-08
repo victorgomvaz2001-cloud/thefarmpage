@@ -9,14 +9,14 @@
       "cta": "Request Invitation"
     },
     "about": {
-      "label": "Who we are",
-      "title": "Who We Are – Cannabis Association in Vic, Catalonia",
-      "description": "The Farm Social Club was born with a clear goal: to create the best cannabis social club in Vic — a space where people can share their passion for cannabis culture in a safe, calm, and respectful environment.",
-      "listIntro": "Located on Carrer de Francesc Pla el Vigatà, in the heart of Vic, our club brings together a diverse community made up of:",
+      "label": "About us",
+      "title": "About Us – Private Cannabis Club near Barcelona",
+      "description": "The Farm Social Club was founded to create the finest cannabis social club in Vic — a safe, respectful space where members can share their passion for cannabis culture with like-minded people.",
+      "listIntro": "Located on Carrer de Francesc Pla el Vigatà in central Vic, we welcome:",
       "listItem1": "Local residents of Vic and the Osona region",
       "listItem2": "University students from the area",
-      "listItem3": "Visitors and tourists who want to experience cannabis culture in Catalonia",
-      "closing": "At The Farm we believe in respect, community, and quality. These values make our cannabis association a unique place within the Catalan scene.",
+      "listItem3": "International visitors and tourists interested in cannabis culture in Catalonia",
+      "closing": "At The Farm we believe in respect, community and quality. These values make our club a standout in the Catalan cannabis scene.",
       "edibles": {
         "title": "Artisan Edibles",
         "text": "We craft our own edibles entirely in-house. Brownies, cookies, gummies and more — all handmade with premium quality ingredients."
@@ -31,25 +31,25 @@
       }
     },
     "events": {
-      "label": "What makes us special",
-      "title": "Events & Member Benefits",
-      "description": "At The Farm, the experience goes far beyond the product. We run our own events and offer exclusive benefits for our members.",
+      "label": "Member Events",
+      "title": "Member Events & Benefits",
+      "description": "The Farm experience goes well beyond the club space. We organise exclusive events for members throughout the year.",
       "sundayBadge": "Every Sunday",
       "edibleTasting": {
-        "title": "Edible Tasting",
-        "text": "Discover and rate our latest handmade creations. A unique sensory experience where members try and give feedback on our newest recipes."
+        "title": "Edibles Tasting Sessions",
+        "text": "Discover our latest artisan creations at private club tastings. Members try new recipes, share feedback and enjoy a unique cannabis culinary experience."
       },
       "poker": {
         "title": "Poker Nights",
-        "text": "Relaxed poker tournaments with great company. A perfect evening to unwind and have a good time with fellow members."
+        "text": "Regular poker tournaments in a relaxed setting. A different kind of evening for club members."
       },
       "playstation": {
         "title": "PlayStation Tournaments",
-        "text": "Gaming competitions open to all members. Come show your skills in FIFA, NBA 2K and many more titles."
+        "text": "Gaming competitions featuring popular titles like FIFA, NBA 2K and other multiplayer games — a fun way to spend time with the community."
       },
       "memberSunday": {
-        "title": "Member Sunday",
-        "text": "Every Sunday belongs to our members. Extra discounts on all selected products and the best atmosphere of the week."
+        "title": "Member Sundays",
+        "text": "Every Sunday we celebrate Member Sunday with discounts on selected products, special activities and the best atmosphere of the week."
       }
     },
     "getInvite": {
@@ -61,67 +61,44 @@
     },
     "clubRules": {
       "label": "How we behave",
-      "title": "Internal Rules",
-      "intro": "The Farm Social Club is a private members club created to share a peaceful and welcoming space. This project exists thanks to the commitment of all its members. Taking care of it is a shared responsibility.",
+      "title": "Club Rules",
+      "intro": "The Farm is a private space designed for calm, respectful coexistence among members. This project exists thanks to the participation and commitment of all its members.",
       "closing": "The Farm belongs to all of us. Let's take care of our community and help it grow. If you have ideas or suggestions, we'll be happy to consider them.",
-      "access": {
-        "title": "Access",
-        "r1": "Access is strictly limited to registered members aged 18 and over.",
-        "r2": "Entry is not permitted to non-members."
-      },
-      "consumption": {
-        "title": "Consumption & operations",
-        "r1": "Consumption is exclusively limited to the club's private space.",
-        "r2": "Smoking or consuming on the street or around the premises is strictly prohibited.",
-        "r3": "Bringing outside products is not permitted, as the club is sustained by its members' contributions.",
-        "r4": "Selling or exchanging products between members is not allowed."
-      },
-      "coexistence": {
-        "title": "Coexistence & community",
-        "r1": "This is a space of peace, respect and tranquility.",
-        "r2": "Poor attitudes or disrespect towards members, staff or the premises will not be tolerated.",
-        "r3": "Keeping the space clean and taking care of the facilities is everyone's responsibility.",
-        "r4": "Adequate personal hygiene is required out of respect for the rest of the community.",
-        "r5": "Each member represents the club; individual behaviour affects the whole community."
-      },
-      "activities": {
-        "title": "Club activities",
-        "r1": "We organise activities for members: tastings, social events and cultural initiatives.",
-        "r2": "The goal is to strengthen community, knowledge and coexistence."
-      },
-      "responsibility": {
-        "title": "Responsibility",
-        "r1": "Each member is responsible for their behaviour inside and outside the club.",
-        "r2": "Discretion and respect are required to protect the association and its members."
-      },
-      "breach": {
-        "title": "Non-compliance",
-        "r1": "Failure to comply with these rules may result in a warning or expulsion.",
-        "r2": "The club reserves the right of admission and continued membership."
-      }
+      "r1": "Access limited to registered members aged 18 and over.",
+      "r2": "Consumption is restricted to the private club space.",
+      "r3": "Consumption outside the club or in surrounding streets is strictly prohibited.",
+      "r4": "No external products may be brought into the club.",
+      "r5": "No sales or exchanges between members.",
+      "r6": "Respect for all members, staff and facilities is mandatory.",
+      "r7": "Discretion is required to protect the association and all its members.",
+      "r8": "Violations may result in warnings or expulsion from the club."
     },
     "whatWillYouFind": {
-      "label": "What awaits you",
+      "label": "What you'll find",
       "title": "What You'll Find at Our Club",
-      "lowPrice": {
-        "title": "Low Prices",
-        "p1": "At The Farm Social Club, members can access a varied selection within the club at some of the lowest prices in Vic. Our goal is for members to enjoy the club at accessible prices in a relaxed atmosphere, making The Farm a reference point for the community.",
-        "p2": "We work to offer our members a good variety and competitive prices in Vic, always within a space designed for sharing, unwinding, and being part of the community.",
-        "item1": "Consistent quality and carefully selected strains",
-        "item2": "Local and responsible cultivation",
-        "item3": "Affordable prices for the community"
+      "edibles": {
+        "title": "Artisan Cannabis Edibles",
+        "intro": "The Farm produces handmade artisan edibles using premium quality ingredients. Our current creations include:",
+        "item1": "Handmade brownies",
+        "item2": "Infused cookies",
+        "item3": "Gummies",
+        "item4": "Exclusive club recipes",
+        "closing": "Members can discover new recipes at our private edibles tasting sessions — a one-of-a-kind cannabis gastronomy experience."
       },
       "localStrains": {
         "title": "Locally Grown Catalonian Strains",
-        "text": "Our selection is cultivated right here in Catalonia. Fresh, local, and carefully chosen to reflect the best of our region."
+        "intro": "We work with varieties grown right here in Catalonia, following responsible and sustainable cultivation practices. Members can expect:",
+        "item1": "Consistent quality and carefully selected strains",
+        "item2": "Local, responsible cultivation",
+        "item3": "Accessible pricing for the community"
       },
       "community": {
-        "title": "Active Community",
-        "listIntro": "Community is one of the pillars of The Farm. We organise regular activities for members:",
+        "title": "Active Social Community",
+        "listIntro": "Community is at the heart of The Farm. We regularly organise activities for members:",
         "item1": "Board games and video game tournaments",
         "item2": "Social and cultural events",
-        "item3": "Exclusive edible tastings",
-        "item4": "Themed nights and member meet-ups"
+        "item3": "Exclusive edibles tastings",
+        "item4": "Themed evenings and member meetups"
       }
     },
     "howToJoin": {
@@ -129,43 +106,43 @@
     },
     "inviteProcess": {
       "label": "How it works",
-      "title": "The process step by step",
+      "title": "Step-by-Step Access Process",
       "step1": {
-        "title": "Request Access",
-        "text": "Fill out the contact form with your basic details. That's all you need to get started."
+        "title": "Request access",
+        "text": "Complete the form with your basic details."
       },
       "step2": {
-        "title": "We Review Your Request",
-        "text": "The Farm team reviews your request and gets back to you within 24 to 48 business hours."
+        "title": "We review your application",
+        "text": "Our team will contact you within 24–48 working hours."
       },
       "step3": {
-        "title": "Receive Your Invitation",
-        "text": "If everything checks out, you'll receive your personal invitation. Keep it safe — you'll need it on your first visit."
+        "title": "Receive your invitation",
+        "text": "Approved applicants receive a personalised invitation."
       },
       "step4": {
         "title": "Welcome to The Farm",
-        "text": "Show up at the club with your invitation and ID. From this point on, you're part of the family."
+        "text": "Present your invitation and valid ID at the door."
       }
     },
     "requirements": {
       "label": "Before you come",
-      "title": "Access Requirements",
+      "title": "Membership Requirements",
       "studentBadge": "Discount active",
       "age": {
-        "title": "Legal Age",
-        "text": "You must be at least 18 years old. ID will be checked at the entrance on every visit."
+        "title": "Minimum age",
+        "text": "18 years (ID checked on every visit)."
       },
       "membership": {
-        "title": "Membership Fee",
-        "text": "Membership is annual. It includes club access, exclusive events, discounts and all member benefits."
+        "title": "Lifetime membership fee",
+        "text": "Paid once on your first visit. Gives you permanent access to the club, events and exclusive discounts."
       },
       "student": {
-        "title": "University Discount",
-        "text": "If you're a university student, you get a discount on all club products. Just verify your student status the first time you request it."
+        "title": "Student discount",
+        "text": "Available for university students with valid student ID."
       },
       "legal": {
-        "title": "Documentation",
-        "text": "A valid national ID, NIE or passport is required on every visit. No documentation, no access."
+        "title": "Required documents",
+        "text": "Valid national ID, NIE or passport."
       }
     },
     "faq": {
