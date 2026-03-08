@@ -6,10 +6,10 @@ import InviteSlideshowClient from './InviteSlideshowClient'
 
 const STEPS = ['step1', 'step2', 'step3', 'step4'] as const
 const STEP_IMAGES = [
-  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/edibles.webp',
-  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/poker.webp',
-  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/member.webp',
-  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/edibles.webp',
+  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process1.webp',
+  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process2.webp',
+  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process3.webp',
+  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process4.webp',
 ]
 
 export default function InviteProcessSection() {
