@@ -9,7 +9,7 @@ function BulletList({ items }: { items: string[] }) {
   return (
     <ul className="mt-4 space-y-2">
       {items.map((item, i) => (
-        <li key={i} className="flex items-start gap-2 text-sm text-gray-500 leading-relaxed">
+        <li key={i} className="flex items-start gap-2 text-sm text-gray-900 leading-relaxed">
           <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#4a5731]" />
           {item}
         </li>
@@ -101,9 +101,9 @@ export default function WhatWillYouFindSection() {
       title: t('edibles.title'),
       content: (
         <>
-          <p className="text-sm text-gray-500 leading-relaxed">{t('edibles.intro')}</p>
+          <p className="text-sm text-gray-900 leading-relaxed">{t('edibles.intro')}</p>
           <BulletList items={[t('edibles.item1'), t('edibles.item2'), t('edibles.item3'), t('edibles.item4')]} />
-          <p className="mt-3 text-sm text-gray-500 leading-relaxed">{t('edibles.closing')}</p>
+          <p className="mt-3 text-sm text-gray-900 leading-relaxed">{t('edibles.closing')}</p>
         </>
       ),
     },
@@ -112,7 +112,7 @@ export default function WhatWillYouFindSection() {
       title: t('localStrains.title'),
       content: (
         <>
-          <p className="text-sm text-gray-500 leading-relaxed">{t('localStrains.intro')}</p>
+          <p className="text-sm text-gray-900 leading-relaxed">{t('localStrains.intro')}</p>
           <BulletList items={[t('localStrains.item1'), t('localStrains.item2'), t('localStrains.item3')]} />
         </>
       ),
@@ -122,7 +122,7 @@ export default function WhatWillYouFindSection() {
       title: t('community.title'),
       content: (
         <>
-          <p className="text-sm text-gray-500 leading-relaxed">{t('community.listIntro')}</p>
+          <p className="text-sm text-gray-900 leading-relaxed">{t('community.listIntro')}</p>
           <BulletList items={[t('community.item1'), t('community.item2'), t('community.item3'), t('community.item4')]} />
         </>
       ),

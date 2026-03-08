@@ -69,8 +69,7 @@ export default function EventsSection() {
               transitionDelay: active !== null ? '0ms' : '400ms',
             }}
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#a8bc7a]">{t('label')}</span>
-            <h2 className="font-storica mt-3 text-4xl font-bold text-white">{t('title')}</h2>
+            <h2 className="font-storica text-4xl font-bold text-white">{t('title')}</h2>
             <p className="mt-4 text-white/70 leading-relaxed">{t('description')}</p>
           </div>
           {/* Vertical state */}
@@ -134,8 +133,7 @@ export default function EventsSection() {
       {/* ── Mobile ──────────────────────────────────────────────────────── */}
       <div className="lg:hidden">
         <div className="bg-[#4a5731] px-6 py-12">
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#a8bc7a]">{t('label')}</span>
-          <h2 className="font-storica mt-3 text-3xl font-bold text-white">{t('title')}</h2>
+          <h2 className="font-storica text-3xl font-bold text-white">{t('title')}</h2>
           <p className="mt-4 text-white/70 leading-relaxed">{t('description')}</p>
         </div>
 

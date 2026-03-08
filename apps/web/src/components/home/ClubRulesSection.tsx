@@ -25,9 +25,6 @@ export default function ClubRulesSection() {
           ))}
         </ul>
 
-        <p className="mt-12 text-center text-sm text-gray-500 italic leading-relaxed max-w-2xl mx-auto">
-          {t('closing')}
-        </p>
       </div>
     </section>
   )
