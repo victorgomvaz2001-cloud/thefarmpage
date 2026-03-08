@@ -28,7 +28,7 @@ export default async function Footer() {
 
           {/* Secciones */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60 mb-4">
+            <h3 className="font-storica text-xs font-semibold uppercase tracking-[0.2em] text-white mb-4">
               {t('sections.title')}
             </h3>
             <ul className="space-y-2">
@@ -41,7 +41,7 @@ export default async function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60 mb-4">
+            <h3 className="font-storica text-xs font-semibold uppercase tracking-[0.2em] text-white mb-4">
               {t('legal.title')}
             </h3>
             <ul className="space-y-2">
@@ -53,7 +53,7 @@ export default async function Footer() {
 
           {/* Social */}
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60 mb-4">
+            <h3 className="font-storica text-xs font-semibold uppercase tracking-[0.2em] text-white mb-4">
               {t('social.title')}
             </h3>
             <ul className="space-y-3">
@@ -92,7 +92,7 @@ export default async function Footer() {
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-4">
           <div className="hidden md:block" />
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60 mb-2">{t('info.location')}</p>
+            <p className="font-storica text-xs font-semibold uppercase tracking-[0.2em] text-white mb-2">{t('info.location')}</p>
             <a
               href="https://maps.app.goo.gl/fHuaBqApfM3b1aLi8"
               target="_blank"
@@ -103,7 +103,7 @@ export default async function Footer() {
             </a>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60 mb-2">{t('info.hours')}</p>
+            <p className="font-storica text-xs font-semibold uppercase tracking-[0.2em] text-white mb-2">{t('info.hours')}</p>
             <p className="text-sm text-white">{t('info.hoursValue')}</p>
             <p className="text-sm text-white">12:00h – 21:00h</p>
           </div>
@@ -112,7 +112,7 @@ export default async function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 border-t border-[#3a4425] pt-6 text-center">
-          <p className="text-xs text-white/50">
+          <p className="text-xs text-white">
             {t('copyright', { year })}
           </p>
         </div>
