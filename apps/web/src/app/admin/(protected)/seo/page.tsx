@@ -36,9 +36,23 @@ const columns: TableColumn<ISEOPage>[] = [
       </span>
     ),
   },
+  {
+    key: 'robots.follow',
+    label: 'Follow',
+    sortable: false,
+    render: (value) => (
+      <span
+        className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${
+          value ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'
+        }`}
+      >
+        {value ? 'Yes' : 'No'}
+      </span>
+    ),
+  },
 ]
 
-type BulkAction = 'enable' | 'disable'
+type BulkAction = 'enable-index' | 'disable-index' | 'enable-follow' | 'disable-follow'
 
 export default function AdminSEOPage() {
   const router = useRouter()
@@ -64,26 +78,28 @@ export default function AdminSEOPage() {
 
   async function handleBulkRobots(action: BulkAction) {
     if (selected.size === 0) return
-    const indexValue = action === 'enable'
+    const isIndex = action === 'enable-index' || action === 'disable-index'
+    const value = action === 'enable-index' || action === 'enable-follow'
     setBulkLoading(true)
     try {
       await Promise.all(
-        [...selected].map((id) =>
-          apiClient.put(`/seo/admin/${id}`, {
-            robots: {
-              index: indexValue,
-              follow: true,
-              googleBot: { index: indexValue, follow: true },
-            },
-          }),
-        ),
+        [...selected].map((id) => {
+          const item = items.find((s) => s._id === id)
+          if (!item) return Promise.resolve()
+          const robots = isIndex
+            ? { index: value, follow: item.robots?.follow ?? true, googleBot: { index: value, follow: item.robots?.googleBot?.follow ?? true } }
+            : { index: item.robots?.index ?? true, follow: value, googleBot: { index: item.robots?.googleBot?.index ?? true, follow: value } }
+          return apiClient.put(`/seo/admin/${id}`, { robots })
+        }),
       )
       setItems((prev) =>
-        prev.map((item) =>
-          selected.has(item._id)
-            ? { ...item, robots: { index: indexValue, follow: true, googleBot: { index: indexValue, follow: true } } }
-            : item,
-        ),
+        prev.map((item) => {
+          if (!selected.has(item._id)) return item
+          const robots = isIndex
+            ? { index: value, follow: item.robots?.follow ?? true, googleBot: { index: value, follow: item.robots?.googleBot?.follow ?? true } }
+            : { index: item.robots?.index ?? true, follow: value, googleBot: { index: item.robots?.googleBot?.index ?? true, follow: value } }
+          return { ...item, robots }
+        }),
       )
       setSelected(new Set())
     } catch (err) {
@@ -127,20 +143,34 @@ export default function AdminSEOPage() {
           <span className="text-sm font-medium text-blue-700">
             {selected.size} route{selected.size > 1 ? 's' : ''} selected
           </span>
-          <div className="ml-auto flex gap-2">
+          <div className="ml-auto flex flex-wrap gap-2">
             <button
-              onClick={() => handleBulkRobots('enable')}
+              onClick={() => handleBulkRobots('enable-index')}
               disabled={bulkLoading}
               className="rounded bg-green-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-green-700 disabled:opacity-50"
             >
               Enable indexing
             </button>
             <button
-              onClick={() => handleBulkRobots('disable')}
+              onClick={() => handleBulkRobots('disable-index')}
               disabled={bulkLoading}
               className="rounded bg-red-500 px-3 py-1.5 text-xs font-semibold text-white hover:bg-red-600 disabled:opacity-50"
             >
               Disable indexing
+            </button>
+            <button
+              onClick={() => handleBulkRobots('enable-follow')}
+              disabled={bulkLoading}
+              className="rounded bg-green-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-green-700 disabled:opacity-50"
+            >
+              Enable follow
+            </button>
+            <button
+              onClick={() => handleBulkRobots('disable-follow')}
+              disabled={bulkLoading}
+              className="rounded bg-red-500 px-3 py-1.5 text-xs font-semibold text-white hover:bg-red-600 disabled:opacity-50"
+            >
+              Disable follow
             </button>
             <button
               onClick={() => setSelected(new Set())}

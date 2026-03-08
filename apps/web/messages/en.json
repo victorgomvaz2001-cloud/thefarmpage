@@ -197,8 +197,22 @@
     }
   },
   "contact": {
+    "label": "Find us",
     "title": "Contact",
-    "description": "Get in touch with us."
+    "description": "We are in Vic, Catalonia. Visit us, message us on WhatsApp or follow us on Instagram.",
+    "location": {
+      "title": "Location",
+      "address": "Carrer de Francesc Pla el Vigatà, 14\nVic, Barcelona",
+      "directions": "Get directions"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "days": "Monday to Sunday",
+      "time": "12:00 – 21:00"
+    },
+    "contact": {
+      "title": "Get in touch"
+    }
   },
   "nav": {
     "home": "Home",
