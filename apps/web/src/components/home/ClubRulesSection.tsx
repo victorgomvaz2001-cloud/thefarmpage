@@ -13,7 +13,7 @@ export default function ClubRulesSection() {
             {t('label')}
           </span>
           <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
-          <p className="mt-6 text-gray-500 max-w-2xl mx-auto leading-relaxed">{t('intro')}</p>
+          <p className="mt-6 text-gray-700 max-w-2xl mx-auto leading-relaxed">{t('intro')}</p>
         </div>
 
         <ul className="flex flex-col gap-3">

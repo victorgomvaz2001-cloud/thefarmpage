@@ -187,7 +187,7 @@ export default function WhatWillYouFindSection() {
 
                   {/* Text */}
                   <div className="lg:w-[58%]">
-                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#4a5731]/60 mb-3">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#4a5731] mb-3">
                       0{i + 1} / 0{slides.length}
                     </p>
                     <h3 className="font-storica text-3xl font-bold tracking-tight text-gray-900">

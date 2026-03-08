@@ -19,18 +19,21 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         }
       `}
     >
-      <button
-        className="flex w-full items-center justify-between px-6 py-5 text-left"
-        onClick={() => setOpen(!open)}
-      >
-        <span className="font-medium text-gray-900">{question}</span>
-        <span
-          className={`ml-4 shrink-0 text-[#4a5731] text-xl font-light transition-transform duration-300 ${open ? 'rotate-45' : 'rotate-0'}`}
+      <dt>
+        <button
+          className="flex w-full items-center justify-between px-6 py-5 text-left"
+          onClick={() => setOpen(!open)}
+          aria-expanded={open}
         >
-          +
-        </span>
-      </button>
-      <div
+          <span className="font-medium text-gray-900">{question}</span>
+          <span
+            className={`ml-4 shrink-0 text-[#4a5731] text-xl font-light transition-transform duration-300 ${open ? 'rotate-45' : 'rotate-0'}`}
+          >
+            +
+          </span>
+        </button>
+      </dt>
+      <dd
         ref={contentRef}
         style={{
           maxHeight: open ? `${contentRef.current?.scrollHeight ?? 300}px` : '0px',
@@ -38,8 +41,8 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
         }}
         className="transition-all duration-300 ease-in-out overflow-hidden"
       >
-        <p className="px-6 pb-5 text-sm text-gray-500 leading-relaxed">{answer}</p>
-      </div>
+        <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{answer}</p>
+      </dd>
     </div>
   )
 }
