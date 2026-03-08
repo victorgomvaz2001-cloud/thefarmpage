@@ -20,7 +20,7 @@ export function AdminLayoutClient({
 
   async function handleLogout() {
     await apiClient.post('/auth/logout', {}).catch(() => {})
-    router.push('/admin/login')
+    router.push('/')
   }
 
   return (
