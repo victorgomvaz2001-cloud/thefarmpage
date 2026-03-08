@@ -24,23 +24,25 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   )
 }
 
+const BASE_URL = 'https://www.thefarmsocialclub.com'
+
 type AlternateKey = 'es' | 'en' | 'x-default'
 
 const ALTERNATE_LOCALES: { key: AlternateKey; label: string; getUrl: (r: string) => string }[] = [
   {
     key: 'es',
     label: 'es',
-    getUrl: (r) => r.startsWith('/en') ? r.slice(3) || '/' : r,
+    getUrl: (r) => BASE_URL + (r.startsWith('/en') ? r.slice(3) || '/' : r),
   },
   {
     key: 'en',
     label: 'en',
-    getUrl: (r) => r.startsWith('/en') ? r : r === '/' ? '/en' : `/en${r}`,
+    getUrl: (r) => BASE_URL + (r.startsWith('/en') ? r : r === '/' ? '/en' : `/en${r}`),
   },
   {
     key: 'x-default',
     label: 'x-default',
-    getUrl: (r) => r.startsWith('/en') ? r.slice(3) || '/' : r,
+    getUrl: (r) => BASE_URL + (r.startsWith('/en') ? r.slice(3) || '/' : r),
   },
 ]
 
@@ -66,7 +68,7 @@ export default function NewSEOPage() {
   )
 
   useEffect(() => {
-    if (!canonicalManual.current) setCanonical(route)
+    if (!canonicalManual.current) setCanonical(BASE_URL + route)
     setAlternateUrls((prev) => {
       const next = { ...prev }
       for (const { key, getUrl } of ALTERNATE_LOCALES) {

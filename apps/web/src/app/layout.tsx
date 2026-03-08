@@ -2,6 +2,7 @@ import { getLocale } from 'next-intl/server'
 import type { ReactNode } from 'react'
 import localFont from 'next/font/local'
 import BusinessProfileSchema from '@/components/BusinessProfileSchema'
+import SchemaHead from '@/components/SchemaHead'
 import './globals.css'
 
 const storica = localFont({
@@ -20,6 +21,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
     <html lang={locale} className={storica.variable}>
       <head>
         <BusinessProfileSchema />
+        <SchemaHead />
       </head>
       <body>{children}</body>
     </html>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import { apiClient } from '@/lib/api-client'
+import { SchemaMarkupModal } from '@/components/admin/SchemaMarkupModal'
 import type { ApiResponse, ISEOPage, ISEOPageUpdate } from '@falcanna/types'
 
 const inputCls =
@@ -30,6 +31,8 @@ export default function EditSEOPage() {
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [langPairs, setLangPairs] = useState<{ key: string; value: string }[]>([])
+  const [schemas, setSchemas] = useState<Record<string, unknown>[]>([])
+  const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
     apiClient
@@ -38,6 +41,7 @@ export default function EditSEOPage() {
         setSEO(res.data)
         const langs = res.data.alternates?.languages ?? {}
         setLangPairs(Object.entries(langs).map(([key, value]) => ({ key, value })))
+        setSchemas(res.data.schemaMarkup ?? [])
       })
       .catch(console.error)
   }, [id])
@@ -88,6 +92,7 @@ export default function EditSEOPage() {
         },
       },
       alternates: Object.keys(languages).length ? { languages } : undefined,
+      schemaMarkup: schemas.length ? schemas : undefined,
     }
 
     try {
@@ -104,6 +109,12 @@ export default function EditSEOPage() {
 
   return (
     <div className="max-w-3xl">
+      {showModal && (
+        <SchemaMarkupModal
+          onAdd={(schema) => setSchemas((prev) => [...prev, schema])}
+          onClose={() => setShowModal(false)}
+        />
+      )}
       <h1 className="mb-6 text-2xl font-bold text-gray-900">
         Edit SEO —{' '}
         <span className="font-mono text-lg text-gray-500">{seo.route}</span>
@@ -316,6 +327,40 @@ export default function EditSEOPage() {
                     type="button"
                     onClick={() => setLangPairs((prev) => prev.filter((_, j) => j !== i))}
                     className="text-sm text-red-400 hover:text-red-600"
+                  >
+                    ✕
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* ── Schema Markup ────────────────────────────────────── */}
+        <section className={sectionCls}>
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className={sectionTitle + ' mb-0'}>Schema Markup (JSON-LD)</h2>
+            <button
+              type="button"
+              onClick={() => setShowModal(true)}
+              className="rounded bg-gray-800 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-700"
+            >
+              + Añadir schema
+            </button>
+          </div>
+          {schemas.length === 0 ? (
+            <p className="text-sm text-gray-400">Sin schemas configurados.</p>
+          ) : (
+            <div className="space-y-2">
+              {schemas.map((schema, i) => (
+                <div key={i} className="flex items-center justify-between rounded border border-gray-200 px-4 py-2">
+                  <span className="font-mono text-xs text-gray-600">
+                    {String(schema['@type'] ?? 'Unknown')}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setSchemas((prev) => prev.filter((_, j) => j !== i))}
+                    className="text-xs text-red-400 hover:text-red-600"
                   >
                     ✕
                   </button>

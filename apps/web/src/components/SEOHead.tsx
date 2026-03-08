@@ -73,16 +73,6 @@ export default async function SEOHead({ route, fallback }: Props) {
         </>
       )}
 
-      {/* ── Schema Markup (JSON-LD) ──────────────────────────── */}
-      {seo?.schemaMarkup?.map((schema, i) => (
-        <script
-          key={i}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({ '@context': 'https://schema.org', ...schema }),
-          }}
-        />
-      ))}
     </>
   )
 }
