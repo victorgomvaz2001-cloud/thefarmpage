@@ -2,8 +2,6 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { apiClient } from '@/lib/api-client'
-import type { ApiResponse, LoginResponse } from '@falcanna/types'
 
 export default function AdminRegisterPage() {
   const router = useRouter()
@@ -21,7 +19,16 @@ export default function AdminRegisterPage() {
     const name = (form.elements.namedItem('name') as HTMLInputElement).value
 
     try {
-      await apiClient.post<ApiResponse<LoginResponse>>('/auth/register', { email, password, name })
+      await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password, name }),
+      }).then(async (res) => {
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({ message: res.statusText }))
+          throw new Error(err.message ?? 'Registration failed')
+        }
+      })
       router.push('/admin/dashboard')
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Registration failed')

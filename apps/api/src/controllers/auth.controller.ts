@@ -15,7 +15,7 @@ export async function login(req: Request, res: Response, next: NextFunction): Pr
     const { email, password } = req.body as { email: string; password: string }
     const { token, user } = await authService.login(email, password)
     res.cookie('token', token, COOKIE_OPTIONS)
-    res.json({ data: { user } })
+    res.json({ data: { token, user } })
   } catch (err) {
     next(err)
   }
@@ -25,7 +25,7 @@ export async function register(req: Request, res: Response, next: NextFunction):
   try {
     const { token, user } = await authService.register(req.body)
     res.cookie('token', token, COOKIE_OPTIONS)
-    res.status(201).json({ data: { user } })
+    res.status(201).json({ data: { token, user } })
   } catch (err) {
     next(err)
   }
