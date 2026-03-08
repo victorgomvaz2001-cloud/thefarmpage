@@ -230,12 +230,7 @@ export default function WhatWillYouFindSection() {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes slideProgress {
-          from { width: 0%; }
-          to { width: 100%; }
-        }
-      `}</style>
+
     </section>
   )
 }
