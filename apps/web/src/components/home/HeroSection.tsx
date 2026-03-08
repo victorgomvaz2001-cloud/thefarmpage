@@ -15,7 +15,7 @@ export default function HeroSection() {
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-[#1a2010]/75" />
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto py-32">
         <h1 className="font-storica text-5xl font-bold tracking-tight text-white md:text-7xl leading-tight">
           {t('headline')}
         </h1>
