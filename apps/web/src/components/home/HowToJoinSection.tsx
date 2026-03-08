@@ -7,10 +7,14 @@ export default function HowToJoinSection() {
 
   return (
     <section>
-      <div className="bg-white py-16 px-4 text-center">
-        <h2 className="font-storica text-4xl font-bold tracking-tight text-gray-900">
+      <div className="bg-[#1a2210] py-24 px-4 text-center">
+        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#a8bc7a]">
+          {t('label')}
+        </span>
+        <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-white">
           {t('title')}
         </h2>
+        <div className="mt-6 h-px w-12 bg-[#a8bc7a]/40 mx-auto" />
       </div>
       <InviteProcessSection />
       <RequirementsSection />

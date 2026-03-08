@@ -2,7 +2,8 @@
   "home": {
     "title": "The Farm Social Club",
     "hero": {
-      "headline": "Club Social Cannábico en Vic | The Farm Social Club",
+      "headline1": "Cannabis Social Club in Vic",
+      "headline2": "The Farm Social Club",
       "subheadline1": "Welcome to The Farm Social Club, a private cannabis social club located in Vic, Catalonia, just 60 km from Barcelona. A space created for people who want to enjoy cannabis responsibly within a respectful, active, and values-driven community.",
       "subheadline2": "Our club brings together cannabis culture, artisan edibles, locally grown strains, and a vibrant community. Access is exclusive to members. Request your invitation to be part of it.",
       "cta": "Request Invitation"
@@ -101,6 +102,7 @@
       }
     },
     "howToJoin": {
+      "label": "Join the club",
       "title": "How to Join the Cannabis Club of Vic"
     },
     "inviteProcess": {

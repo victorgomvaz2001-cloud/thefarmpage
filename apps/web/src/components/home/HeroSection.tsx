@@ -17,13 +17,15 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-[#1a2010]/75" />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto py-32">
         <h1 className="font-storica text-5xl font-bold tracking-tight text-white md:text-7xl leading-tight">
-          {t('headline')}
+          {t('headline1')}
+          <span className="block text-white">·</span>
+          {t('headline2')}
         </h1>
         <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">{t('subheadline1')}</p>
         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">{t('subheadline2')}</p>
         <a
           href="#invite"
-          className="mt-10 inline-block bg-[#4a5731] px-10 py-4 text-sm font-semibold uppercase tracking-widest text-white hover:bg-[#3a4425] transition-colors rounded-full"
+          className="mt-12 inline-block bg-[#a8bc7a] px-14 py-5 text-base font-bold uppercase tracking-widest text-[#1a2010] hover:bg-[#b8cc8a] transition-colors rounded-full shadow-lg shadow-black/30"
         >
           {t('cta')}
         </a>
