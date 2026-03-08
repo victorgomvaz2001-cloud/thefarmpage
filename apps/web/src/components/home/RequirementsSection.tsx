@@ -12,7 +12,7 @@ export default function RequirementsSection() {
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#4a5731]">
             {t('label')}
           </span>
-          <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
+          <h3 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h3>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {ITEMS.map((key) => (

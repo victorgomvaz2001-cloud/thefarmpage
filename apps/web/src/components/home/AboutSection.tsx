@@ -16,7 +16,16 @@ export default function AboutSection() {
             </span>
             <h2 className="font-storica mt-3 text-4xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">{t('description')}</p>
-            <p className="mt-4 text-gray-500">{t('description2')}</p>
+            <p className="mt-4 text-gray-500 leading-relaxed">{t('listIntro')}</p>
+            <ul className="mt-3 space-y-2">
+              {(['listItem1', 'listItem2', 'listItem3'] as const).map((key) => (
+                <li key={key} className="flex items-start gap-2 text-gray-500 text-sm leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#4a5731]" />
+                  {t(key)}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-gray-500 leading-relaxed">{t('closing')}</p>
           </div>
           <div className="grid grid-cols-2 gap-4 h-96">
             <div className="relative overflow-hidden">
@@ -38,15 +47,6 @@ export default function AboutSection() {
               />
             </div>
           </div>
-        </div>
-
-        <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-3">
-          {PILLARS.map((key) => (
-            <div key={key} className="border-t-2 border-[#4a5731] pt-6">
-              <h3 className="font-storica text-lg font-bold text-gray-900">{t(`${key}.title`)}</h3>
-              <p className="mt-3 text-sm text-gray-500 leading-relaxed">{t(`${key}.text`)}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

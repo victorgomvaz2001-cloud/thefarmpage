@@ -110,9 +110,9 @@ export default function EventsSection() {
 
               {/* Collapsed: horizontal name centered */}
               <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${isActive ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-                <span className="font-storica font-bold text-white text-sm tracking-widest text-center px-2">
+                <h3 className="font-storica font-bold text-white text-sm tracking-widest text-center px-2">
                   {t(`${key}.title`)}
-                </span>
+                </h3>
               </div>
 
               {/* Expanded: content */}
@@ -148,7 +148,7 @@ export default function EventsSection() {
                 onClick={() => handleClick(i)}
               >
                 <Image src={src} alt="" fill sizes="100vw" className="object-cover brightness-[0.35]" />
-                <span className="relative z-10 font-storica font-bold text-white">{t(`${key}.title`)}</span>
+                <h3 className="relative z-10 font-storica font-bold text-white">{t(`${key}.title`)}</h3>
                 <span className={`relative z-10 ml-auto text-white/70 text-xs transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}>▼</span>
               </button>
               <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isActive ? 'max-h-80' : 'max-h-0'}`}>

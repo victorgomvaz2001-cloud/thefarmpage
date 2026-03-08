@@ -3,15 +3,20 @@
     "title": "The Farm Social Club",
     "hero": {
       "label": "Cannabis Social Club · Catalonia",
-      "headline": "Welcome to The Farm",
-      "subheadline": "An exclusive members-only space where cannabis culture, community, and the finest handmade edibles come together.",
-      "cta": "Get Your Invite"
+      "headline": "Club Social Cannábico en Vic | The Farm Social Club",
+      "subheadline1": "Welcome to The Farm Social Club, a private cannabis social club located in Vic, Catalonia, just 60 km from Barcelona. A space created for people who want to enjoy cannabis responsibly within a respectful, active, and values-driven community.",
+      "subheadline2": "Our club brings together cannabis culture, artisan edibles, locally grown strains, and a vibrant community. Access is exclusive to members. Request your invitation to be part of it.",
+      "cta": "Request Invitation"
     },
     "about": {
       "label": "Who we are",
-      "title": "More than a club, a community",
-      "description": "The Farm Social Club was born in Catalonia with a clear vision: to create a quality space for people who value cannabis as part of their culture and lifestyle. Here you'll find a calm, respectful environment full of great people.",
-      "description2": "We're proud to welcome both tourists looking to experience authentic Catalan culture and local university students who want a place they can call their own.",
+      "title": "Who We Are – Cannabis Association in Vic, Catalonia",
+      "description": "The Farm Social Club was born with a clear goal: to create the best cannabis social club in Vic — a space where people can share their passion for cannabis culture in a safe, calm, and respectful environment.",
+      "listIntro": "Located on Carrer de Francesc Pla el Vigatà, in the heart of Vic, our club brings together a diverse community made up of:",
+      "listItem1": "Local residents of Vic and the Osona region",
+      "listItem2": "University students from the area",
+      "listItem3": "Visitors and tourists who want to experience cannabis culture in Catalonia",
+      "closing": "At The Farm we believe in respect, community, and quality. These values make our cannabis association a unique place within the Catalan scene.",
       "edibles": {
         "title": "Artisan Edibles",
         "text": "We craft our own edibles entirely in-house. Brownies, cookies, gummies and more — all handmade with premium quality ingredients."
@@ -94,6 +99,33 @@
         "r1": "Failure to comply with these rules may result in a warning or expulsion.",
         "r2": "The club reserves the right of admission and continued membership."
       }
+    },
+    "whatWillYouFind": {
+      "label": "What awaits you",
+      "title": "What You'll Find at Our Club",
+      "lowPrice": {
+        "title": "Low Prices",
+        "p1": "At The Farm Social Club, members can access a varied selection within the club at some of the lowest prices in Vic. Our goal is for members to enjoy the club at accessible prices in a relaxed atmosphere, making The Farm a reference point for the community.",
+        "p2": "We work to offer our members a good variety and competitive prices in Vic, always within a space designed for sharing, unwinding, and being part of the community.",
+        "item1": "Consistent quality and carefully selected strains",
+        "item2": "Local and responsible cultivation",
+        "item3": "Affordable prices for the community"
+      },
+      "localStrains": {
+        "title": "Locally Grown Catalonian Strains",
+        "text": "Our selection is cultivated right here in Catalonia. Fresh, local, and carefully chosen to reflect the best of our region."
+      },
+      "community": {
+        "title": "Active Community",
+        "listIntro": "Community is one of the pillars of The Farm. We organise regular activities for members:",
+        "item1": "Board games and video game tournaments",
+        "item2": "Social and cultural events",
+        "item3": "Exclusive edible tastings",
+        "item4": "Themed nights and member meet-ups"
+      }
+    },
+    "howToJoin": {
+      "title": "How to Join the Cannabis Club of Vic"
     },
     "inviteProcess": {
       "label": "How it works",

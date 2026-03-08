@@ -22,7 +22,8 @@ export default function HeroSection() {
         <h1 className="font-storica text-5xl font-bold tracking-tight text-white md:text-7xl leading-tight">
           {t('headline')}
         </h1>
-        <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">{t('subheadline')}</p>
+        <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">{t('subheadline1')}</p>
+        <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">{t('subheadline2')}</p>
         <a
           href="#invite"
           className="mt-10 inline-block bg-[#4a5731] px-10 py-4 text-sm font-semibold uppercase tracking-widest text-white hover:bg-[#3a4425] transition-colors rounded-full"

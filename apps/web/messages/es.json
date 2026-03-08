@@ -3,15 +3,20 @@
     "title": "The Farm Social Club",
     "hero": {
       "label": "Club Social Cannábico · Cataluña",
-      "headline": "Bienvenido a The Farm",
-      "subheadline": "Un espacio exclusivo para socios donde la cultura cannábica, la comunidad y los mejores comestibles artesanales se encuentran.",
-      "cta": "Consigue tu invitación"
+      "headline": "Club Social Cannábico en Vic | The Farm Social Club",
+      "subheadline1": "Bienvenido a The Farm Social Club, un club social cannábico privado situado en Vic, Cataluña, a tan solo 60 km de Barcelona. Un espacio creado para personas que quieren disfrutar del cannabis de forma responsable dentro de una comunidad respetuosa, activa y con valores.",
+      "subheadline2": "Nuestro club reúne cultura cannábica, comestibles artesanales, variedades de cultivo local y una comunidad viva. El acceso es exclusivo para socios. Solicita tu invitación para formar parte.",
+      "cta": "Solicitar Invitación"
     },
     "about": {
       "label": "Quiénes somos",
-      "title": "Más que un club, una comunidad",
-      "description": "The Farm Social Club nació en Cataluña con una idea clara: crear un espacio de calidad para personas que valoran el cannabis como parte de su cultura y estilo de vida. Aquí encontrarás un ambiente tranquilo, respetuoso y lleno de buena gente.",
-      "description2": "Nos enorgullece acoger tanto a turistas que quieren vivir la auténtica experiencia catalana como a estudiantes universitarios de la zona que buscan un lugar de referencia.",
+      "title": "Quiénes Somos – Asociación Cannábica en Vic, Cataluña",
+      "description": "The Farm Social Club nació con un objetivo claro: crear el mejor club social cannábico de Vic, un espacio donde las personas puedan compartir su pasión por la cultura del cannabis en un ambiente seguro, tranquilo y respetuoso.",
+      "listIntro": "Ubicado en el Carrer de Francesc Pla el Vigatà, en el corazón de Vic, nuestro club reúne a una comunidad diversa formada por:",
+      "listItem1": "Residentes locales de Vic y la comarca d'Osona",
+      "listItem2": "Estudiantes universitarios de la zona",
+      "listItem3": "Visitantes y turistas que quieren conocer la cultura cannábica en Cataluña",
+      "closing": "En The Farm creemos en el respeto, la comunidad y la calidad. Estos valores hacen de nuestra asociación cannábica un lugar único dentro de la escena catalana.",
       "edibles": {
         "title": "Comestibles artesanales",
         "text": "Elaboramos nuestros propios comestibles de forma completamente casera. Brownies, galletas, gominolas y mucho más, todo hecho a mano con ingredientes de primera calidad."
@@ -56,7 +61,7 @@
     },
     "clubRules": {
       "label": "Cómo nos comportamos",
-      "title": "Normas Internas",
+      "title": "Normas Internas del Club",
       "intro": "The Farm Social Club es un club privado creado para compartir un espacio de paz y tranquilidad. Este proyecto existe gracias al compromiso de todos los socios. Cuidarlo es una responsabilidad compartida.",
       "closing": "The Farm es cosa de todos. Cuidemos nuestra comunidad y hagámosla crecer. Si tienes ideas o sugerencias, estaremos encantados de valorarlas.",
       "access": {
@@ -94,6 +99,33 @@
         "r1": "El incumplimiento de estas normas puede conllevar una advertencia o la expulsión.",
         "r2": "El club se reserva el derecho de admisión y permanencia."
       }
+    },
+    "whatWillYouFind": {
+      "label": "Lo que te espera",
+      "title": "Qué Encontrarás en Nuestro Club",
+      "lowPrice": {
+        "title": "Precios Bajos",
+        "p1": "En The Farm Social Club los socios pueden acceder a una selección variada dentro del club con algunos de los precios más bajos en Vic. Nuestro objetivo es que los miembros puedan disfrutar del club con precios accesibles y un ambiente relajado, convirtiendo a The Farm en un punto de referencia para la comunidad.",
+        "p2": "Trabajamos para ofrecer a nuestros socios una buena variedad y precios competitivos en Vic, siempre dentro de un espacio pensado para compartir, desconectar y formar parte de la comunidad.",
+        "item1": "Calidad constante y selección cuidada de variedades",
+        "item2": "Cultivo de proximidad y responsable",
+        "item3": "Precios accesibles para la comunidad"
+      },
+      "localStrains": {
+        "title": "Cultivo Autóctono de Cataluña",
+        "text": "Nuestra selección se cultiva aquí mismo en Cataluña. Fresca, local y cuidadosamente elegida para reflejar lo mejor de nuestra región."
+      },
+      "community": {
+        "title": "Comunidad Activa",
+        "listIntro": "La comunidad es uno de los pilares de The Farm. Organizamos actividades regulares para socios:",
+        "item1": "Juegos de mesa y torneos de videojuegos",
+        "item2": "Eventos sociales y culturales",
+        "item3": "Catas de comestibles exclusivas",
+        "item4": "Noches temáticas y encuentros de socios"
+      }
+    },
+    "howToJoin": {
+      "title": "Cómo Unirse al Club Cannábico de Vic"
     },
     "inviteProcess": {
       "label": "Cómo funciona",

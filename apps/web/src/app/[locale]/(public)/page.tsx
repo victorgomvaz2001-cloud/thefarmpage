@@ -9,8 +9,8 @@ const AboutSection         = lazy(() => import('@/components/home/AboutSection')
 const EventsSection        = lazy(() => import('@/components/home/EventsSection'))
 const GetInviteSection     = lazy(() => import('@/components/home/GetInviteSection'))
 const ClubRulesSection     = lazy(() => import('@/components/home/ClubRulesSection'))
-const InviteProcessSection = lazy(() => import('@/components/home/InviteProcessSection'))
-const RequirementsSection  = lazy(() => import('@/components/home/RequirementsSection'))
+const WhatWillYouFindSection = lazy(() => import('@/components/home/WhatWillYouFindSection'))
+const HowToJoinSection     = lazy(() => import('@/components/home/HowToJoinSection'))
 const FAQSection           = lazy(() => import('@/components/home/FAQSection'))
 const FinalCTASection      = lazy(() => import('@/components/home/FinalCTASection'))
 
@@ -24,13 +24,11 @@ export default async function HomePage() {
       <SEOHead route={seoRoute} fallback={{ title: t('title') }} />
       <HeroSection />
       <AboutSection />
+      <WhatWillYouFindSection />
       <EventsSection />
-      <GetInviteSection />
+      <HowToJoinSection />
       <ClubRulesSection />
-      <InviteProcessSection />
-      <RequirementsSection />
       <FAQSection />
-      <FinalCTASection />
     </>
   )
 }

@@ -53,7 +53,7 @@ export default function InviteProcessSection() {
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#4a5731]">
             {t('label')}
           </span>
-          <h2 className="font-storica mt-3 text-3xl md:text-5xl font-bold tracking-tight text-gray-900">{t('title')}</h2>
+          <h3 className="font-storica mt-3 text-3xl md:text-5xl font-bold tracking-tight text-gray-900">{t('title')}</h3>
 
           {/* Mobile: image below title, full bleed */}
           <div className="lg:hidden mt-8 -mx-4 relative h-56 overflow-hidden">
