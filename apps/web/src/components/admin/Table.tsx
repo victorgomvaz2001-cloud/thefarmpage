@@ -27,6 +27,10 @@ export interface TableProps<T extends object> {
   exportFileName?: string
   /** Field used as React key (defaults to "_id") */
   keyField?: string
+  /** Controlled selected keys */
+  selectedKeys?: Set<string>
+  /** Called when selection changes */
+  onSelectionChange?: (keys: Set<string>) => void
 }
 
 const PAGE_SIZES = [10, 25, 50] as const
@@ -179,7 +183,10 @@ export function Table<T extends object>({
   actions,
   exportFileName = 'export',
   keyField = '_id',
+  selectedKeys,
+  onSelectionChange,
 }: TableProps<T>) {
+  const selectable = selectedKeys !== undefined && onSelectionChange !== undefined
   const [sortKey, setSortKey] = useState<string | null>(null)
   const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc')
   const [pageSize, setPageSize] = useState<PageSize>(10)
@@ -219,7 +226,32 @@ export function Table<T extends object>({
     setPage(1)
   }
 
-  const colCount = columns.length + (actions ? 1 : 0)
+  function toggleRow(key: string) {
+    if (!selectable) return
+    const next = new Set(selectedKeys)
+    next.has(key) ? next.delete(key) : next.add(key)
+    onSelectionChange!(next)
+  }
+
+  function toggleAll() {
+    if (!selectable) return
+    const pageKeys = paginated.map((row, i) =>
+      coerce(getValue(row as Record<string, unknown>, keyField)) || String(i),
+    )
+    const allSelected = pageKeys.every((k) => selectedKeys!.has(k))
+    const next = new Set(selectedKeys)
+    if (allSelected) pageKeys.forEach((k) => next.delete(k))
+    else pageKeys.forEach((k) => next.add(k))
+    onSelectionChange!(next)
+  }
+
+  const pageKeys = paginated.map((row, i) =>
+    coerce(getValue(row as Record<string, unknown>, keyField)) || String(i),
+  )
+  const allPageSelected = selectable && pageKeys.length > 0 && pageKeys.every((k) => selectedKeys!.has(k))
+  const somePageSelected = selectable && pageKeys.some((k) => selectedKeys!.has(k))
+
+  const colCount = columns.length + (actions ? 1 : 0) + (selectable ? 1 : 0)
   const from = sorted.length === 0 ? 0 : (safePage - 1) * pageSize + 1
   const to = Math.min(safePage * pageSize, sorted.length)
 
@@ -279,6 +311,17 @@ export function Table<T extends object>({
           <table className="w-full text-sm">
             <thead className="bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-500">
               <tr>
+                {selectable && (
+                  <th className="w-10 px-4 py-3">
+                    <input
+                      type="checkbox"
+                      checked={allPageSelected}
+                      ref={(el) => { if (el) el.indeterminate = !allPageSelected && somePageSelected }}
+                      onChange={toggleAll}
+                      className="h-4 w-4 rounded border-gray-300 text-blue-600"
+                    />
+                  </th>
+                )}
                 {columns.map((col) => (
                   <th
                     key={col.key}
@@ -315,11 +358,22 @@ export function Table<T extends object>({
               ) : (
                 paginated.map((row, i) => {
                   const key = coerce(getValue(row as Record<string, unknown>, keyField)) || String(i)
+                  const isSelected = selectable && selectedKeys!.has(key)
                   return (
                     <tr
                       key={key}
-                      className="transition-colors hover:bg-blue-50/50"
+                      className={`transition-colors ${isSelected ? 'bg-blue-50' : 'hover:bg-blue-50/50'}`}
                     >
+                      {selectable && (
+                        <td className="w-10 px-4 py-3">
+                          <input
+                            type="checkbox"
+                            checked={isSelected}
+                            onChange={() => toggleRow(key)}
+                            className="h-4 w-4 rounded border-gray-300 text-blue-600"
+                          />
+                        </td>
+                      )}
                       {columns.map((col) => (
                         <td
                           key={col.key}
