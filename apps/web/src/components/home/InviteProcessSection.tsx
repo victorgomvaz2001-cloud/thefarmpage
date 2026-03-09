@@ -11,6 +11,8 @@ const STEP_IMAGES = [
   'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process3.webp',
   'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process4.webp',
 ]
+/** object-position per image: step 3 = show more right (message), step 4 = show more left (both people) */
+const STEP_OBJECT_POSITIONS = [undefined, undefined, '75% 75%', '20% center'] as (string | undefined)[]
 
 export default function InviteProcessSection() {
   const t = useTranslations('home.inviteProcess')
@@ -44,6 +46,7 @@ export default function InviteProcessSection() {
           images={STEP_IMAGES}
           alts={stepAlts}
           activeIndex={activeStep}
+          objectPositions={STEP_OBJECT_POSITIONS}
         />
       </div>
 
@@ -62,6 +65,7 @@ export default function InviteProcessSection() {
               alts={stepAlts}
               activeIndex={activeStep}
               gradient={false}
+              objectPositions={STEP_OBJECT_POSITIONS}
             />
           </div>
 

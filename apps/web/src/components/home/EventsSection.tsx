@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 const EVENTS = [
   { key: 'edibleTasting', src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/edibles.webp' },
   { key: 'poker',         src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/poker.webp' },
-  { key: 'playstation',   src: 'https://picsum.photos/seed/thefarm-gaming/600/400' },
+  { key: 'playstation',   src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/playstation.webp' },
   { key: 'memberSunday',  src: 'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/member.webp' },
 ] as const
 

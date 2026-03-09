@@ -7,9 +7,11 @@ interface Props {
   alts: string[]
   activeIndex: number
   gradient?: boolean
+  /** Optional object-position per image (e.g. "70% 75%" to show more right, "25% center" for more left) */
+  objectPositions?: (string | undefined)[]
 }
 
-export default function InviteSlideshowClient({ images, alts, activeIndex, gradient = true }: Props) {
+export default function InviteSlideshowClient({ images, alts, activeIndex, gradient = true, objectPositions }: Props) {
   return (
     <div className="relative h-full w-full overflow-hidden">
       {images.map((src, i) => (
@@ -22,6 +24,7 @@ export default function InviteSlideshowClient({ images, alts, activeIndex, gradi
           className={`object-cover transition-opacity duration-1000 ${
             i === activeIndex ? 'opacity-100' : 'opacity-0'
           }`}
+          style={objectPositions?.[i] ? { objectPosition: objectPositions[i] } : undefined}
           priority={false}
         />
       ))}
