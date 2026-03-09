@@ -22,7 +22,7 @@ interface SeedEntry {
 }
 
 const seoData: SeedEntry[] = [
-  // Privacy Policy — ES
+  // Privacy Policy - ES
   {
     route: '/privacy-policy',
     title: 'Política de Privacidad | The Farm Social Club',
@@ -31,7 +31,7 @@ const seoData: SeedEntry[] = [
     hreflangEs: '/privacy-policy',
     hreflangEn: '/en/privacy-policy',
   },
-  // Privacy Policy — EN
+  // Privacy Policy - EN
   {
     route: '/en/privacy-policy',
     title: 'Privacy Policy | The Farm Social Club',
@@ -40,7 +40,7 @@ const seoData: SeedEntry[] = [
     hreflangEs: '/privacy-policy',
     hreflangEn: '/en/privacy-policy',
   },
-  // Cookies Policy — ES
+  // Cookies Policy - ES
   {
     route: '/cookies-policy',
     title: 'Política de Cookies | The Farm Social Club',
@@ -49,7 +49,7 @@ const seoData: SeedEntry[] = [
     hreflangEs: '/cookies-policy',
     hreflangEn: '/en/cookies-policy',
   },
-  // Cookies Policy — EN
+  // Cookies Policy - EN
   {
     route: '/en/cookies-policy',
     title: 'Cookies Policy | The Farm Social Club',
@@ -58,7 +58,7 @@ const seoData: SeedEntry[] = [
     hreflangEs: '/cookies-policy',
     hreflangEn: '/en/cookies-policy',
   },
-  // Legal Notice — ES
+  // Legal Notice - ES
   {
     route: '/legal-notice',
     title: 'Aviso Legal | The Farm Social Club',
@@ -67,7 +67,7 @@ const seoData: SeedEntry[] = [
     hreflangEs: '/legal-notice',
     hreflangEn: '/en/legal-notice',
   },
-  // Legal Notice — EN
+  // Legal Notice - EN
   {
     route: '/en/legal-notice',
     title: 'Legal Notice | The Farm Social Club',
@@ -130,7 +130,7 @@ async function seed() {
     }
   }
 
-  console.log(`\nDone — ${created} created, ${updated} updated (${seoData.length} total routes)`)
+  console.log(`\nDone - ${created} created, ${updated} updated (${seoData.length} total routes)`)
   await mongoose.disconnect()
 }
 

@@ -61,7 +61,7 @@ export default function EventsSection() {
       >
         {/* Title column */}
         <div className="bg-[#4a5731] relative overflow-hidden">
-          {/* Horizontal state — fixed width so text doesn't reflow as column shrinks */}
+          {/* Horizontal state - fixed width so text doesn't reflow as column shrinks */}
           <div
             className={`absolute top-0 left-0 bottom-0 w-[480px] flex flex-col justify-center px-12 ${active !== null ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
             style={{
@@ -151,7 +151,7 @@ export default function EventsSection() {
               <Image src={src} alt={t(`${key}.title`)} fill sizes="100vw" className="object-cover" />
               <div className={`absolute inset-0 transition-colors duration-500 ${isActive ? 'bg-[#1a2010]/60' : 'bg-black/65'}`} />
 
-              {/* Header row — always visible */}
+              {/* Header row - always visible */}
               <button
                 className="absolute top-0 left-0 right-0 h-16 flex items-center px-6 z-10"
                 onClick={() => handleClick(i)}

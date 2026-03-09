@@ -239,7 +239,7 @@ export default function NewSEOPage() {
           <div className="grid grid-cols-2 gap-4">
             <Field label="Card Type">
               <select name="twitterCard.card" className={inputCls}>
-                <option value="">— None —</option>
+                <option value="">- None -</option>
                 <option value="summary">summary</option>
                 <option value="summary_large_image">summary_large_image</option>
                 <option value="app">app</option>

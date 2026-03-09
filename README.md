@@ -1,4 +1,4 @@
-# The Farm — Monorepo
+# The Farm - Monorepo
 
 TypeScript monorepo powered by **Turborepo** + **pnpm workspaces**.
 
@@ -22,11 +22,11 @@ TypeScript monorepo powered by **Turborepo** + **pnpm workspaces**.
 ```
 thefarm/
 ├── apps/
-│   ├── web/          # Next.js 15 — public site + admin
+│   ├── web/          # Next.js 15 - public site + admin
 │   └── api/          # Express.js REST API
 ├── packages/
-│   ├── types/        # @falcanna/types — shared TS interfaces
-│   ├── tsconfig/     # @falcanna/tsconfig — TS base configs
+│   ├── types/        # @falcanna/types - shared TS interfaces
+│   ├── tsconfig/     # @falcanna/tsconfig - TS base configs
 │   └── eslint-config/ # @falcanna/eslint-config
 ├── turbo.json
 ├── pnpm-workspace.yaml
@@ -142,7 +142,7 @@ pnpm lint
 
 ## Admin routes (`/admin`)
 
-Protected by `middleware.ts` — redirects to `/admin/login` if no `token` cookie.
+Protected by `middleware.ts` - redirects to `/admin/login` if no `token` cookie.
 
 | Route | Description |
 |---|---|
@@ -227,7 +227,7 @@ Every public `page.tsx` exports `generateMetadata` that fetches SEO from the API
 ```ts
 export async function generateMetadata(): Promise<Metadata> {
   const seo = await fetchSEO('/us-wa/strains')
-  return buildMetadata(seo, { title: 'Strains — Washington' })
+  return buildMetadata(seo, { title: 'Strains - Washington' })
 }
 ```
 

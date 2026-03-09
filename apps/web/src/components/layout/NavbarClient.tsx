@@ -35,7 +35,7 @@ export default function NavbarClient({ home, contact }: Props) {
             {home}
           </Link>
 
-          {/* Spacer — reserves space for the protruding logo */}
+          {/* Spacer - reserves space for the protruding logo */}
           <div className="w-20 md:w-24" />
 
           <Link
@@ -76,7 +76,7 @@ export default function NavbarClient({ home, contact }: Props) {
           </button>
         </div>
 
-        {/* Protruding circular logo — centered, overflows below the navbar */}
+        {/* Protruding circular logo - centered, overflows below the navbar */}
         <div className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10">
           <div className="rounded-full bg-[#4a5731] p-1">
             <Link href="/" aria-label="Ir a la página de inicio">

@@ -46,10 +46,10 @@ function RequirementCard({ title, text, icon }: { title: string; text: string; i
     <div className="group relative overflow-hidden bg-[#1a2210] min-h-[220px] h-full cursor-default">
       {/* Depth gradient */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#4a5731]/30 via-transparent to-black/50" />
-      {/* Hover darkening — desktop only */}
+      {/* Hover darkening - desktop only */}
       <div className="pointer-events-none absolute inset-0 bg-black/0 lg:transition-colors lg:duration-500 lg:group-hover:bg-black/15" />
 
-      {/* Mobile — static layout, always visible */}
+      {/* Mobile - static layout, always visible */}
       <div className="lg:hidden flex flex-col items-center justify-center gap-4 px-7 py-10 h-full relative z-10 text-center">
         <div className="text-[#a8bc7a]">{icon}</div>
         <h3 className="font-storica text-xl font-bold leading-tight text-white">{title}</h3>
@@ -58,15 +58,15 @@ function RequirementCard({ title, text, icon }: { title: string; text: string; i
         </div>
       </div>
 
-      {/* Desktop — animated on hover */}
+      {/* Desktop - animated on hover */}
       <div className="hidden lg:block">
-        {/* Icon + Title — centered, shifts up on hover */}
+        {/* Icon + Title - centered, shifts up on hover */}
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-7 transition-transform duration-500 ease-out group-hover:-translate-y-[18%]">
           <div className="text-[#a8bc7a]">{icon}</div>
           <h3 className="font-storica text-xl font-bold leading-tight text-white text-center">{title}</h3>
         </div>
 
-        {/* Description panel — slides up from bottom */}
+        {/* Description panel - slides up from bottom */}
         <div className="absolute inset-x-0 bottom-0 translate-y-full px-7 pb-7 pt-0 transition-transform duration-500 ease-out group-hover:translate-y-0">
           <div className="border-t border-white/20 pt-4">
             <p className="text-sm leading-relaxed text-white/80">{text}</p>
@@ -93,17 +93,17 @@ export default function RequirementsSection() {
       <div className="grid grid-cols-1 gap-[2px] lg:grid-cols-[1fr_300px_1fr] lg:grid-rows-2 lg:h-[540px]">
 
         {/* ── LEFT COLUMN ── */}
-        {/* Age — top-left */}
+        {/* Age - top-left */}
         <div className="lg:col-start-1 lg:row-start-1 min-h-[220px] lg:min-h-0">
           <RequirementCard title={t('age.title')} text={t('age.text')} icon={<AgeIcon />} />
         </div>
 
-        {/* Membership — bottom-left */}
+        {/* Membership - bottom-left */}
         <div className="lg:col-start-1 lg:row-start-2 min-h-[220px] lg:min-h-0">
           <RequirementCard title={t('membership.title')} text={t('membership.text')} icon={<MembershipIcon />} />
         </div>
 
-        {/* ── CENTER BLOCK — spans both rows ── */}
+        {/* ── CENTER BLOCK - spans both rows ── */}
         <div className="order-first bg-[#f7f6f2] flex flex-col items-center justify-center text-center px-10 py-16 lg:order-none lg:col-start-2 lg:row-start-1 lg:row-span-2">
           <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#4a5731]">
             {t('label')}
@@ -115,12 +115,12 @@ export default function RequirementsSection() {
         </div>
 
         {/* ── RIGHT COLUMN ── */}
-        {/* Student — top-right */}
+        {/* Student - top-right */}
         <div className="lg:col-start-3 lg:row-start-1 min-h-[220px] lg:min-h-0">
           <RequirementCard title={t('student.title')} text={t('student.text')} icon={<StudentIcon />} />
         </div>
 
-        {/* Legal — bottom-right */}
+        {/* Legal - bottom-right */}
         <div className="lg:col-start-3 lg:row-start-2 min-h-[220px] lg:min-h-0">
           <RequirementCard title={t('legal.title')} text={t('legal.text')} icon={<LegalIcon />} />
         </div>

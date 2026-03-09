@@ -4,7 +4,7 @@ import { authMiddleware } from '../middleware/auth.middleware'
 
 const router: IRouter = Router()
 
-// Public — consumed by Next.js route handler and bots
+// Public - consumed by Next.js route handler and bots
 router.get('/xml', sitemapController.getXml)
 router.get('/meta', sitemapController.getMeta)
 

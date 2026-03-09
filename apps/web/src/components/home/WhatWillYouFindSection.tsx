@@ -160,8 +160,8 @@ export default function WhatWillYouFindSection() {
           </h2>
         </div>
 
-        {/* Slide content — fixed height on both mobile and desktop */}
-        <div className="relative h-[460px] lg:h-[320px] overflow-hidden">
+        {/* Slide content - fixed height on both mobile and desktop (sized to fit longest text) */}
+        <div className="relative h-[580px] lg:h-[440px]">
           {slides.map((slide, i) => {
             const isActive = i === active
             return (
@@ -176,17 +176,17 @@ export default function WhatWillYouFindSection() {
                   visibility: isActive ? 'visible' : 'hidden',
                 }}
               >
-                <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-16 h-full">
+              <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-16 h-full min-h-0">
 
-                  {/* Illustration — 120px on mobile, full width on desktop */}
+                  {/* Illustration - 120px on mobile, full width on desktop */}
                   <div className="flex items-center justify-center lg:w-[42%] shrink-0">
                     <div className="w-[120px] lg:w-full lg:max-w-none">
                       {slide.illustration}
                     </div>
                   </div>
 
-                  {/* Text */}
-                  <div className="lg:w-[58%]">
+                  {/* Text - scrollable if content is taller than fixed container height */}
+                  <div className="lg:w-[58%] flex-1 min-h-0 overflow-y-auto pr-1">
                     <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#4a5731] mb-3">
                       0{i + 1} / 0{slides.length}
                     </p>

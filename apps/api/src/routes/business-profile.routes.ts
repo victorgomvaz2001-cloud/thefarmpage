@@ -4,7 +4,7 @@ import { authMiddleware } from '../middleware/auth.middleware'
 
 const router: IRouter = Router()
 
-// Public — consumed server-side for JSON-LD rendering
+// Public - consumed server-side for JSON-LD rendering
 router.get('/', businessProfileController.get)
 
 // Admin

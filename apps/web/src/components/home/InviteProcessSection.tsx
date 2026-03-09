@@ -40,7 +40,7 @@ export default function InviteProcessSection() {
 
   return (
     <section className="relative bg-white overflow-hidden">
-      {/* Desktop: image slideshow — absolute, full height, flush to right edge */}
+      {/* Desktop: image slideshow - absolute, full height, flush to right edge */}
       <div className="absolute inset-y-0 right-0 hidden lg:block w-1/2">
         <InviteSlideshowClient
           images={STEP_IMAGES}
