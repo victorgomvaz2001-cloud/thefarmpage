@@ -6,10 +6,10 @@ import InviteSlideshowClient from './InviteSlideshowClient'
 
 const STEPS = ['step1', 'step2', 'step3', 'step4'] as const
 const STEP_IMAGES = [
-  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process1.webp',
-  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process2.webp',
-  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process3.webp',
-  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process4.webp',
+  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process1.jpg',
+  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process2.jpg',
+  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process3.jpg',
+  'https://cavidasthefarm.s3.eu-north-1.amazonaws.com/process4.jpg',
 ]
 /** object-position per image: step 3 = show more right (message), step 4 = show more left (both people) */
 const STEP_OBJECT_POSITIONS = [undefined, undefined, '75% 75%', '20% center'] as (string | undefined)[]
