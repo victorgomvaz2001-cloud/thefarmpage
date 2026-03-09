@@ -105,7 +105,7 @@ export default async function ContactPage() {
         <div className="overflow-hidden bg-white shadow-sm">
           <iframe
             title="The Farm Social Club - Ubicación"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.123456789!2d2.2534!3d41.9302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a517b6e9a5f4d7%3A0x1234567890abcdef!2sCarrer%20de%20Francesc%20Pla%20el%20Vigat%C3%A0%2C%2014%2C%20Vic!5e0!3m2!1ses!2ses!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.963727359808!2d2.2569517880535055!3d41.93663079706812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a527577d2373df%3A0x3a704017b6db4498!2sThe%20Farm%20club%20Social!5e0!3m2!1ses!2ses!4v1773075808793!5m2!1ses!2ses"
             width="100%"
             height="420"
             style={{ border: 0 }}
