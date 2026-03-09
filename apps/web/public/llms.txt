@@ -33,4 +33,4 @@ Cannabis social clubs in Catalonia operate within a specific legal framework as 
 
 ## Languages
 
-Available in English (`/en`) and Spanish (`/es`).
+Available in English (`/en`) and Spanish (`/`).
