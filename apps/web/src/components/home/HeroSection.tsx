@@ -24,7 +24,9 @@ export default function HeroSection() {
         <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">{t('subheadline1')}</p>
         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">{t('subheadline2')}</p>
         <a
-          href="#invite"
+          href="https://wa.me/34618384682"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-12 inline-block bg-[#a8bc7a] px-14 py-5 text-base font-bold uppercase tracking-widest text-[#1a2010] hover:bg-[#b8cc8a] transition-colors rounded-full shadow-lg shadow-black/30"
         >
           {t('cta')}
