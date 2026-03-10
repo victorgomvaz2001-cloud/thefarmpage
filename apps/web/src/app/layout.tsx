@@ -1,6 +1,7 @@
 import { getLocale } from 'next-intl/server'
 import type { ReactNode } from 'react'
 import localFont from 'next/font/local'
+import Script from 'next/script'
 import BusinessProfileSchema from '@/components/BusinessProfileSchema'
 import SchemaHead from '@/components/SchemaHead'
 import './globals.css'
@@ -22,6 +23,18 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
       <head>
         <BusinessProfileSchema />
         <SchemaHead />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VGFL5FNR24"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VGFL5FNR24');
+          `}
+        </Script>
       </head>
       <body>{children}</body>
     </html>
