@@ -17,11 +17,16 @@ export function middleware(request: NextRequest) {
       return NextResponse.redirect(new URL('/admin/login', request.url))
     }
 
-    if (pathname === '/admin/login' || pathname === '/admin/register') {
+    if (pathname === '/admin/login') {
       if (token) {
         return NextResponse.redirect(new URL('/admin/dashboard', request.url))
       }
       return NextResponse.next()
+    }
+
+    // Any attempt to access the old register route should go to the login page
+    if (pathname === '/admin/register') {
+      return NextResponse.redirect(new URL('/admin/login', request.url))
     }
 
     if (!token) {
